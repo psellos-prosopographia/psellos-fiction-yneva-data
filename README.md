@@ -18,7 +18,8 @@ This repository **does not** implement UI, visualization, or narrative presentat
 
 ## 1. Relationship to the psellos ecosystem
 
-This repository **conforms to and extends** the psellos ecosystem, and is governed by the principles articulated in the psellos-hub authority index.
+This repository **conforms to and extends** the psellos ecosystem, and is governed by the principles articulated in the psellos-hub authority index:
+https://raw.githubusercontent.com/psellos-prosopographia/psellos-hub/refs/heads/main/AUTHORITY_INDEX.yml
 
 In particular:
 
@@ -35,7 +36,16 @@ The repository:
 
 ---
 
-## 2. High-level repository pillars
+## 2. Canonical docs and IDs
+
+* Canonical authoritative docs live at repository root per the psellos-hub authority index.
+* The `docs/` directory is reserved for non-canonical longform notes and stubs.
+* IDs are mandatory for all entities, assertions, and vocabulary terms. See [ID_POLICY.md](ID_POLICY.md).
+* Local decisions are tracked in [DECISIONS/README.md](DECISIONS/README.md).
+
+---
+
+## 3. High-level repository pillars
 
 The repository is organized around the following conceptual pillars:
 
@@ -203,24 +213,21 @@ This repository explicitly does **not**:
 
 ---
 
-## 7. Expected repository structure (conceptual)
+## 8. Expected repository structure (conceptual)
 
 ```
 /entities
-  /persons
-  /polities
-  /polity_phases
-  /institutions
-  /offices
-  /places
-  /artifacts
-  /sources
+  /person
+  /polity
+  /institution
+  /office
+  /place
+  /artifact
+  /text
+  /source
 
 /assertions
-  /core
-  /events
-  /claims
-  /characterizations
+  <entity_id>.yml
 
 /vocabularies
   relation_types.yml
@@ -246,7 +253,7 @@ Exact filenames are not mandated yet; structure is conceptual.
 
 ---
 
-## 8. User-facing website acknowledgment
+## 9. User-facing website acknowledgment
 
 A separate user-facing website exists to explore, visualize, and narrate this corpus.
 
@@ -256,7 +263,7 @@ A separate user-facing website exists to explore, visualize, and narrate this co
 
 ---
 
-## 9. Governance and decision-making
+## 10. Governance and decision-making
 
 All modeling decisions that:
 
@@ -269,7 +276,7 @@ must be documented as explicit decisions (ADR-style), with rationale and scope.
 
 ---
 
-## 10. Bootstrap files
+## 11. Bootstrap files
 
 On initialization, the repository should include:
 
@@ -277,14 +284,14 @@ On initialization, the repository should include:
 * `AGENTS.md`
 
   * defines roles for automated or human agents (e.g. data entry, review, validation)
-* `DECISIONS.md` (initially empty)
+* `DECISIONS/README.md` (initially empty)
 * `MODEL_NOTES.md` (living design commentary)
 * `LICENSE.md` containing the full text of CC BY-NC-SA 4.0.
 * `.gitignore` (excluding build artifacts, caches, editor files)
 
 ---
 
-## 11. Final principle
+## 12. Final principle
 
 > This repository models **how worlds are argued about**, not just what happened in them.
 
