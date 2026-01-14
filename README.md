@@ -40,8 +40,9 @@ The repository:
 
 * Canonical authoritative docs live at repository root per the psellos-hub authority index.
 * The `docs/` directory is reserved for non-canonical longform notes and stubs.
-* IDs are mandatory for all entities, assertions, and vocabulary terms. See [ID_POLICY.md](ID_POLICY.md).
-* Local decisions are tracked in [DECISIONS/README.md](DECISIONS/README.md).
+* Normalization & authority control: see [NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md](NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md).
+* ID rules: see [ID_POLICY.md](ID_POLICY.md).
+* Decision procedure and records: see [DECISIONS.md](DECISIONS.md).
 
 ---
 
@@ -136,17 +137,11 @@ If context is absent, validation must be permissive.
 
 ### 2.6 Sources and narrative layers
 
-The repository explicitly models:
-
-* sources as entities
-* types of sources (epic, law, inscription, archaeology, later historian)
-* narrative layers (legendary, propagandistic, institutional orthodoxy, outsider, analytic/editorial)
-
-This enables:
-
-* competing interpretations
-* institutional bias
-* later reinterpretation of earlier material
+The repository explicitly models sources as entities and separates narrative layers to preserve
+ambiguity, contradictions, and epistemic status. Narrative layers allow competing interpretations,
+institutional bias, and later reinterpretation of earlier material to coexist without forced
+resolution. The authoritative enumeration of layers lives in
+[L_LAYER_CATALOGUE.md](L_LAYER_CATALOGUE.md).
 
 ---
 
@@ -273,6 +268,7 @@ All modeling decisions that:
 * reinterpret prior data
 
 must be documented as explicit decisions (ADR-style), with rationale and scope.
+See [DECISIONS.md](DECISIONS.md) for procedure and [DECISIONS/README.md](DECISIONS/README.md) for the index.
 
 ---
 
@@ -284,7 +280,7 @@ On initialization, the repository should include:
 * `AGENTS.md`
 
   * defines roles for automated or human agents (e.g. data entry, review, validation)
-* `DECISIONS/README.md` (initially empty)
+* `DECISIONS.md` (decision procedure) and `DECISIONS/README.md` (index)
 * `MODEL_NOTES.md` (living design commentary)
 * `LICENSE.md` containing the full text of CC BY-NC-SA 4.0.
 * `.gitignore` (excluding build artifacts, caches, editor files)
