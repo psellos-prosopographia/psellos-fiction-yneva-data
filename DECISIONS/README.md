@@ -1,9 +1,7 @@
 # Decisions
 
-This directory is the canonical home for local decision records.
-
-* Decisions document changes to assertion semantics, vocabularies, rule regimes, or repository structure.
-* New decisions should be added as separate markdown files and referenced here.
+This directory is the canonical home for local decision records. Procedural guidance lives in
+[../DECISIONS.md](../DECISIONS.md).
 
 ## Index
 

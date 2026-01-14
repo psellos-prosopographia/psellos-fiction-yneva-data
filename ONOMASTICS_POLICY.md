@@ -5,6 +5,8 @@
 ## 1. Scope and Principles
 
 This policy governs how **names are modeled, normalized, and interpreted** within the corpus.
+Identity boundary decisions are governed by
+[NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md](NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md).
 
 ### Core principles
 

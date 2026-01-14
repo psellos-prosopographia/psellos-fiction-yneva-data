@@ -78,34 +78,9 @@ Entities may exist solely to support assertions (e.g., an attestation-only sourc
 
 ## 4. Identifier (ID) policy
 
-### 4.1 Canonical ID structure
-Canonical IDs are **fully semantic**, **globally unique across entity types**, **lowercase**, and use **underscores**.
-
-Type prefixes:
-
-- `person.`  
-- `place.`  
-- `polity.`  
-- `polity_phase.`  
-- `office.`  
-- `ethnos.`  
-- `group.`  
-- `event.`  
-- `source.`  
-- `institution.`  
-- `religion.`  
-
-### 4.2 Canonical ID stability
-Canonical IDs **do not change**.  
-If a correction is unavoidable (e.g., catastrophic minting error), the change must be handled via an explicit redirect/mapping mechanism defined by the repository’s governance (never silent, never ad hoc).
-
-### 4.3 Minting rules
-When minting a new canonical ID:
-
-1. Choose the correct entity type prefix.
-2. Select the most stable normalized headword (per onomastics rules where applicable).
-3. Add disambiguators only when required (e.g., `_i`, `_ii`, `_of_<place>`, `_dynasty_<x>`), and record the rationale in governance-tracked decisions.
-4. Ensure global uniqueness across all entity types.
+Canonical ID syntax, prefix rules, redirects, and immutability guarantees are defined in
+[ID_POLICY.md](ID_POLICY.md). Normalization decisions that determine identity boundaries or
+disambiguation should be recorded via the repository’s decision process.
 
 ---
 
@@ -235,11 +210,9 @@ Assertions without explicit sources are permitted only when they are:
 
 ## 10. Names, epithets, language (onomastics)
 
-1. Names are **first-class assertions** (`named_as` or equivalent).
-2. Name kinds, derivation handling, and language/culture authority control follow the repository’s onomastics policy.
-3. Normalization must not collapse distinct name forms into one “true name”; instead:
-   - preserve each attested form as an assertion with provenance and layer,
-   - normalize only for indexing and canonical ID minting, never by deleting variants.
+Name form, transcription, language handling, and attestation rules are governed by
+[ONOMASTICS_POLICY.md](ONOMASTICS_POLICY.md). Normalization uses names only as evidence for identity
+decisions and ID disambiguation; it must not collapse distinct name forms or delete variants.
 
 ---
 
