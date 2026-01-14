@@ -1,0 +1,52 @@
+schema_version: "0.1"
+updated_utc: "2026-01-13T00:00:00Z"
+repo: "psellos-prosopographia/psellos-fiction-yneva-data"
+raw_base: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main"
+
+interaction_scope: name: "External conversational design space" applies_to: "ChatGPT chat usage only" definition: > For the purposes of this project, an "External conversational design space" refers exclusively to an interactive ChatGPT chat used for ideation, analysis, drafting, critique, and non-binding design discussion that occurs outside the repository execution environment.
+explicit_constraints: - "No direct filesystem access" - "No command execution capability" - "No ability to write, modify, or commit repository files" - "No persistent task state beyond the conversational session" exclusion_clause: > Any automated or semi-automated system capable of executing commands, writing files, applying diffs, committing changes, or maintaining multi-step task state (including but not limited to Codex-controlled task runners or CI-integrated agents) is explicitly excluded from this scope and MUST NOT treat itself as operating within the External conversational design space.
+governance_note: > Outputs produced within this scope are advisory and exploratory only. They acquire authority only if later introduced into the repository through workflows defined in AI_WORKFLOW.md and recorded in accordance with DECISIONS/ and STATUS.md where applicable.
+
+canonical_paths:
+  readme: "README.md"
+  governance: "GOVERNANCE.md"
+  agents: "AGENTS.md"
+  onomastics_policy: "ONOMASTICS_POLICY.md"
+  normalization_and_authority_control_policy: "Normalization_and_Authority_Control_Policy.md"
+  model_notes: "MODEL_NOTES.md"
+  layer_classification_spec: "L_LAYER_CLASSIFICATION_SPEC"
+  layer_catalogue: "L_LAYER_CATALOGUE.md"
+  id_policy: "ID_POLICY.md"
+  authority_index: "AUTHORITY_INDEX.yml"
+
+raw_urls:
+  readme: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/README.md"
+  governance: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/GOVERNANCE.md"
+  agents: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/AGENTS.md"
+  onomastics_policy: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/ONOMASTICS_POLICY.md"
+  normalization_and_authority_control_policy: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/Normalization_and_Authority_Control_Policy.md"
+  model_notes: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/MODEL_NOTES.md"
+  layer_classification_spec: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/L_LAYER_CLASSIFICATION_SPEC"
+  layer_catalogue: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/L_LAYER_CATALOGUE.md"
+  id_policy: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/ID_POLICY.md"
+  authority_index: "https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/AUTHORITY_INDEX.yml"
+
+authority_rules:
+  - "psellos-hub is the source of authority for cross-repo governance; where psellos-hub defines governance constraints, it prevails."
+  - "Within this repository, GOVERRNANCE.md defines the local governance contract (subordinate to psellos-hub where overlapping)."
+  - "Normalization_and_Authority_Control_Policy.md governs identity normalization and authority control for the Yneva dataset."
+  - "ONOMASTICS_POLICY.md governs names, language forms, and name-assertion handling."
+  - "L_LAYER_CLASSIFICATION_SPEC and L_LAYER_CATALOGUE.md define the narrative/epistemic layer system for assertions."
+  - "ID_POLICY.md governs canonical ID minting, stability, and redirects (if any)."
+  - "AGENTS.md defines agent interaction contracts and repository-safe operating constraints."
+
+canonical_order:
+  - "README.md"
+  - "GOVERNANCE.md"
+  - "AGENTS.md"
+  - "Normalization_and_Authority_Control_Policy.md"
+  - "ONOMASTICS_POLICY.md"
+  - "L_LAYER_CLASSIFICATION_SPEC"
+  - "L_LAYER_CATALOGUE.md"
+  - "ID_POLICY.md"
+  - "MODEL_NOTES.md"
