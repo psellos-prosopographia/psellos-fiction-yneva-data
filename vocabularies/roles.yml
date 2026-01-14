@@ -1,1 +1,5 @@
-# Placeholder for participant role definitions.
+schema_version: '1.0'
+namespace: role
+updated_utc: '2026-01-14T00:00:00Z'
+
+terms: []

@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_utc: '2026-01-13T00:00:00Z'
+updated_utc: '2026-01-14T00:00:00Z'
 repository:
   owner: psellos-prosopographia
   name: psellos-fiction-yneva-data
@@ -12,17 +12,14 @@ external_authority:
 interaction_scope:
   name: External conversational design space
   applies_to: interactive chat outside the repository execution environment
-  definition: An interactive conversational space used for ideation, analysis, drafting, critique, and
-    non-binding discussion; it is not an execution environment and cannot modify repository state.
+  definition: An interactive conversational space used for ideation, analysis, drafting, critique, and non-binding discussion; it is not an execution environment and cannot modify repository state.
   explicit_constraints:
   - No direct filesystem access to the repository working tree
   - No command execution in the repository environment
   - No ability to write, modify, or commit repository files
   - No persistent task state beyond the conversational session
-  exclusion_clause: Any automated or semi-automated system capable of executing commands, writing files,
-    applying diffs, committing changes, or maintaining multi-step task state is excluded from this scope.
-  governance_note: Outputs produced in this scope are advisory only and gain authority only if incorporated
-    into the repository via the governance process.
+  exclusion_clause: Any automated or semi-automated system capable of executing commands, writing files, applying diffs, committing changes, or maintaining multi-step task state is excluded from this scope.
+  governance_note: Outputs produced in this scope are advisory only and gain authority only if incorporated into the repository via the governance process.
 precedence:
   rule: If documents conflict, the first applicable authority below prevails.
   ordered_keys:
@@ -35,6 +32,12 @@ precedence:
   - layer_classification_spec
   - layer_catalogue
   - build_contract
+  - spec_dataset_layout
+  - spec_element_format
+  - spec_assertion_shape
+  - spec_provenance
+  - spec_time_scope
+  - templates
   - rule_regime_institutional
   - rule_regime_polity_phase
   - vocab_relation_types
@@ -165,6 +168,58 @@ documents:
   normative: true
   raw_url: https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/build/build_contract.yml
   blob_url: https://github.com/psellos-prosopographia/psellos-fiction-yneva-data/blob/main/build/build_contract.yml
+- key: spec_dataset_layout
+  path: SPEC_DATASET_LAYOUT.md
+  role: spec
+  authoritative_for:
+  - dataset filesystem layout
+  - naming rules
+  normative: true
+  raw_url: https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/SPEC_DATASET_LAYOUT.md
+  blob_url: https://github.com/psellos-prosopographia/psellos-fiction-yneva-data/blob/main/SPEC_DATASET_LAYOUT.md
+- key: spec_element_format
+  path: SPEC_ELEMENT_FORMAT.md
+  role: spec
+  authoritative_for:
+  - how to write dataset elements
+  - entity file format
+  normative: true
+  raw_url: https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/SPEC_ELEMENT_FORMAT.md
+  blob_url: https://github.com/psellos-prosopographia/psellos-fiction-yneva-data/blob/main/SPEC_ELEMENT_FORMAT.md
+- key: spec_assertion_shape
+  path: SPEC_ASSERTION_SHAPE.md
+  role: spec
+  authoritative_for:
+  - assertion object schema
+  - assertion encoding rules
+  normative: true
+  raw_url: https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/SPEC_ASSERTION_SHAPE.md
+  blob_url: https://github.com/psellos-prosopographia/psellos-fiction-yneva-data/blob/main/SPEC_ASSERTION_SHAPE.md
+- key: spec_provenance
+  path: SPEC_PROVENANCE.md
+  role: spec
+  authoritative_for:
+  - provenance encoding
+  - attestation vs editorial synthesis
+  normative: true
+  raw_url: https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/SPEC_PROVENANCE.md
+  blob_url: https://github.com/psellos-prosopographia/psellos-fiction-yneva-data/blob/main/SPEC_PROVENANCE.md
+- key: spec_time_scope
+  path: SPEC_TIME_SCOPE.md
+  role: spec
+  authoritative_for:
+  - time scope encoding
+  normative: true
+  raw_url: https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/SPEC_TIME_SCOPE.md
+  blob_url: https://github.com/psellos-prosopographia/psellos-fiction-yneva-data/blob/main/SPEC_TIME_SCOPE.md
+- key: templates
+  path: templates/
+  role: templates
+  authoritative_for:
+  - authoring templates
+  normative: true
+  raw_url: https://raw.githubusercontent.com/psellos-prosopographia/psellos-fiction-yneva-data/main/templates/
+  blob_url: https://github.com/psellos-prosopographia/psellos-fiction-yneva-data/blob/main/templates/
 - key: version_pins
   path: build/version_pins.yml
   role: contract

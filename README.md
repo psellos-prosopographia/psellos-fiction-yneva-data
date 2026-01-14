@@ -46,6 +46,20 @@ The repository:
 
 ---
 
+## 2.1 Mechanical authoring layer
+
+The mechanical authoring layer defines **how to write data** (deterministic file shapes, assertion encoding, provenance, time scope, and layout):
+
+- [SPEC_DATASET_LAYOUT.md](SPEC_DATASET_LAYOUT.md) — canonical filesystem layout and naming rules
+- [SPEC_ELEMENT_FORMAT.md](SPEC_ELEMENT_FORMAT.md) — how to write an entity file
+- [SPEC_ASSERTION_SHAPE.md](SPEC_ASSERTION_SHAPE.md) — definitive assertion object contract
+- [SPEC_PROVENANCE.md](SPEC_PROVENANCE.md) — encoding of attestation vs editorial synthesis
+- [SPEC_TIME_SCOPE.md](SPEC_TIME_SCOPE.md) — standardized temporal encoding
+- `build/build_contract.yml` — machine-readable validator contract
+- `templates/` — canonical starter templates
+
+Policy documents (governance, normalization, onomastics, IDs, layer catalogue) remain authoritative for meaning and boundaries; the specs above translate them into enforceable shapes.
+
 ## 3. High-level repository pillars
 
 The repository is organized around the following conceptual pillars:
@@ -208,7 +222,11 @@ This repository explicitly does **not**:
 
 ---
 
-## 8. Expected repository structure (conceptual)
+## 8. Repository structure
+
+Canonical layout and naming rules are defined in [SPEC_DATASET_LAYOUT.md](SPEC_DATASET_LAYOUT.md).
+
+High-level overview:
 
 ```
 /entities
@@ -220,9 +238,6 @@ This repository explicitly does **not**:
   /artifact
   /text
   /source
-
-/assertions
-  <entity_id>.yml
 
 /vocabularies
   relation_types.yml
@@ -238,13 +253,12 @@ This repository explicitly does **not**:
   build_contract.yml
   version_pins.yml
 
-/docs
-  GOVERNANCE.md
-  MODEL_NOTES.md
-  DECISIONS.md
+/templates
+  entity.person.yml
+  entity.place.yml
+  entity.source.yml
 ```
 
-Exact filenames are not mandated yet; structure is conceptual.
 
 ---
 

@@ -1,1 +1,238 @@
-# Placeholder for build contract.
+schema_version: '1.0'
+updated_utc: '2026-01-14T00:00:00Z'
+
+# Normative build/validation contract for dataset elements.
+# Structural validity and reference integrity only.
+
+contract:
+  name: yneva-data-build-contract
+  contract_version: '0.1'
+  element_kinds:
+    - entity
+
+id_patterns:
+  # Canonical ID syntax is defined in ID_POLICY.md.
+  entity_id_regex: '^e\.(person|polity|institution|office|place|artifact|text|source)\.[a-z0-9-]+$'
+  vocabulary_term_id_regex: '^(rel|evt|role|cls|state|title)\.[a-z0-9-]+$'
+  layer_id_regex: '^L[0-9]+\.[0-9]+$'
+  rule_regime_id_regex: '^r\.[a-z0-9-]+$'
+
+filesystem:
+  required_top_level_directories:
+    - build
+    - entities
+    - rule_regimes
+    - vocabularies
+  recommended_top_level_directories:
+    - templates
+    - layers
+    - sources
+    - assertions
+  entity_root: entities
+  filename_rules:
+    rule: filename must equal element.id + '.yml'
+    case: lowercase
+    path_separator: '/'
+  directory_expectations:
+    entity_by_kind:
+      person: entities/person
+      polity: entities/polity
+      institution: entities/institution
+      office: entities/office
+      place: entities/place
+      artifact: entities/artifact
+      text: entities/text
+      source: entities/source
+
+elements:
+  entity:
+    required_keys:
+      - id
+      - kind
+      - label
+      - assertions
+    optional_keys:
+      - description
+      - notes
+      - redirects_from
+      - deprecated
+      - meta
+    key_types:
+      id: string
+      kind: string
+      label: string
+      description: string
+      notes: string
+      redirects_from: list[string]
+      deprecated: boolean
+      meta: mapping
+      assertions: list[assertion]
+    kind_enum:
+      - person
+      - polity
+      - institution
+      - office
+      - place
+      - artifact
+      - text
+      - source
+
+assertions:
+  assertion:
+    required_keys:
+      - id
+      - predicate
+      - narrative_layer
+      - provenance
+    optional_keys:
+      - object
+      - value
+      - time_scope
+      - rule_regime
+      - modality
+      - confidence
+      - notes
+    key_types:
+      id: string
+      predicate: string
+      narrative_layer: string
+      object: string
+      value: any
+      time_scope: time_scope
+      rule_regime: string
+      modality: string
+      confidence: number
+      notes: string
+      provenance: provenance
+    constraints:
+      - name: assertion_id_unique_within_element
+        rule: assertion.id values must be unique within the containing element file
+      - name: predicate_format
+        rule: predicate must match id_patterns.vocabulary_term_id_regex
+      - name: argument_exclusivity
+        rule: exactly one of object or value must be present
+      - name: object_reference_shape
+        rule: if object is present, it must match id_patterns.entity_id_regex
+      - name: narrative_layer_reference
+        rule: narrative_layer must match id_patterns.layer_id_regex and must exist in L_LAYER_CATALOGUE.md
+      - name: time_scope_shape
+        rule: if time_scope is present, it must satisfy time_scope_schema below
+      - name: provenance_shape
+        rule: provenance must satisfy provenance_schema below
+      - name: rule_regime_reference
+        rule: if rule_regime is present, it must match id_patterns.rule_regime_id_regex and exist in rule_regimes/*.yml
+
+time_scope_schema:
+  required_keys:
+    - qualifier
+  optional_keys:
+    - start_year
+    - end_year
+  key_types:
+    qualifier: string
+    start_year: integer
+    end_year: integer
+  qualifier_enum:
+    - exact
+    - circa
+    - before
+    - after
+    - terminus_post_quem
+    - terminus_ante_quem
+  constraints:
+    - name: year_bounds
+      rule: if both start_year and end_year are present, start_year must be <= end_year
+    - name: qualifier_requires_fields
+      rule: |
+        exact: requires (start_year) OR (start_year and end_year)
+        circa: requires (start_year) OR (end_year) OR (start_year and end_year)
+        before: requires end_year and forbids start_year
+        after: requires start_year and forbids end_year
+        terminus_post_quem: requires start_year and forbids end_year
+        terminus_ante_quem: requires end_year and forbids start_year
+
+provenance_schema:
+  # Aligns with NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md §9.
+  required_keys:
+    - kind
+  optional_keys:
+    - attested_by
+    - editorial_synthesis
+  key_types:
+    kind: string
+    attested_by: list[attestation]
+    editorial_synthesis: editorial_synthesis
+  kind_enum:
+    - attested
+    - editorial
+  constraints:
+    - name: kind_attested_requires_attested_by
+      rule: if kind == 'attested', attested_by must be present and non-empty
+    - name: kind_editorial_requires_editorial_synthesis
+      rule: if kind == 'editorial', editorial_synthesis must be present
+
+attestation_schema:
+  required_keys:
+    - source
+  optional_keys:
+    - locator
+    - quoted
+    - notes
+  key_types:
+    source: string
+    locator: locator
+    quoted: string
+    notes: string
+  constraints:
+    - name: source_reference
+      rule: source must match id_patterns.entity_id_regex and refer to an entity of kind 'source' or 'text'
+
+locator_schema:
+  # Locators are intentionally flexible but structurally constrained.
+  allowed_keys:
+    - page
+    - folio
+    - line
+    - section
+    - chapter
+    - paragraph
+    - uri_fragment
+    - note
+  key_types:
+    page: string
+    folio: string
+    line: string
+    section: string
+    chapter: string
+    paragraph: string
+    uri_fragment: string
+    note: string
+
+editorial_synthesis_schema:
+  required_keys:
+    - method
+  optional_keys:
+    - basis
+    - notes
+  key_types:
+    method: string
+    basis: list[string]
+    notes: string
+  method_enum:
+    - synthesis
+    - inference
+    - normalization_scaffold
+
+reference_integrity:
+  filename_id_match:
+    rule: for any dataset element file, basename(file) must equal element.id + '.yml'
+  entity_directory_match:
+    rule: entity.kind MUST map to the directory in filesystem.directory_expectations.entity_by_kind
+  referenced_entity_exists:
+    rule: any assertion.object and any provenance.attested_by[].source MUST correspond to an existing entity file
+  predicate_exists:
+    rule: assertion.predicate MUST exist in the appropriate vocabularies/*.yml registry for its namespace
+  narrative_layer_exists:
+    rule: assertion.narrative_layer MUST appear as a layer key in L_LAYER_CATALOGUE.md
+  rule_regime_exists:
+    rule: if assertion.rule_regime is present, it MUST exist in rule_regimes/*.yml

@@ -1,0 +1,37 @@
+# Template: entity.person.yml
+# Replace placeholder IDs and values. Keep structural shape.
+
+id: e.person.template-person
+kind: person
+label: Template Person
+description: >
+  Short description (optional). Do not put canonical names here; model names via rel.named_as assertions.
+
+assertions:
+  # --- Names are assertions (see ONOMASTICS_POLICY.md) ---
+  - id: a1
+    predicate: rel.named_as
+    value:
+      string: Replace Me
+      name_kind: primary   # e.g., primary, birth_name, epithet (see ONOMASTICS_POLICY.md)
+      language: und        # BCP-47 when known; und = undetermined
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        basis: []
+        notes: Replace with attested provenance when a source entity exists.
+
+  # --- Example relationship (replace with real IDs) ---
+  # Exactly one of object/value is allowed. Uncomment and replace when target entities exist.
+  # - id: a2
+  #   predicate: rel.child_of
+  #   object: e.person.some-parent
+  #   narrative_layer: L1.1
+  #   provenance:
+  #     kind: attested
+  #     attested_by:
+  #       - source: e.source.some-source
+  #         locator:
+  #           page: '12'

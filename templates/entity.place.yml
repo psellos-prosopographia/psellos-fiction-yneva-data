@@ -1,0 +1,34 @@
+# Template: entity.place.yml
+# Replace placeholder IDs and values. Keep structural shape.
+
+id: e.place.template-place
+kind: place
+label: Template Place
+description: >
+  Optional description. Do not encode names as top-level fields beyond label; use rel.named_as assertions.
+
+assertions:
+  - id: a1
+    predicate: rel.named_as
+    value:
+      string: Replace Me
+      name_kind: primary
+      language: und
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        basis: []
+        notes: Replace with attested provenance when a source entity exists.
+
+  # Example containment/association (replace with real IDs)
+  # - id: a2
+  #   predicate: rel.located_in
+  #   object: e.polity.some-polity
+  #   narrative_layer: L4.4
+  #   provenance:
+  #     kind: editorial
+  #     editorial_synthesis:
+  #       method: synthesis
+  #       basis: []

@@ -1,0 +1,21 @@
+# Template: entity.source.yml
+# A source is an entity describing an attestation-bearing artifact/corpus.
+
+id: e.source.template-source
+kind: source
+label: Template Source
+description: >
+  Describe what this source is (chronicle, inscription corpus, archive register, etc.).
+
+assertions:
+  - id: a1
+    predicate: rel.characterized_as
+    value:
+      classification: cls.source
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        basis: []
+        notes: Source-type classification is editorial unless explicitly attested as such in a meta-source.

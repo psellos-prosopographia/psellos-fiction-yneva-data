@@ -1,1 +1,54 @@
-# Placeholder for relation type metadata.
+schema_version: '1.0'
+namespace: rel
+updated_utc: '2026-01-14T00:00:00Z'
+
+# Controlled vocabulary for relation/predicate terms.
+# Semantic meaning is defined here; dataset assertions reference these ids.
+
+terms:
+  - id: rel.named_as
+    label: named as
+    arity: value
+    notes: Name assertions; see ONOMASTICS_POLICY.md.
+
+  - id: rel.characterized_as
+    label: characterized as
+    arity: value
+    notes: Classification/characterization of an entity; often editorial/analytic.
+
+  - id: rel.child_of
+    label: child of
+    arity: object
+    symmetric: false
+
+  - id: rel.located_in
+    label: located in
+    arity: object
+    symmetric: false
+
+  # Minimal core assertion operations referenced in README.md.
+  - id: rel.attested_in_source
+    label: attested in source
+    arity: object
+
+  - id: rel.participates_in_event
+    label: participates in event
+    arity: object
+
+  - id: rel.holds_office
+    label: holds office
+    arity: object
+
+  - id: rel.related_to
+    label: related to
+    arity: object
+    symmetric: true
+
+  - id: rel.identified_with
+    label: identified with
+    arity: object
+    symmetric: true
+
+  - id: rel.claims_identity_as
+    label: claims identity as
+    arity: object

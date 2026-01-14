@@ -1,1 +1,12 @@
-# Placeholder for classification labels.
+schema_version: '1.0'
+namespace: cls
+updated_utc: '2026-01-14T00:00:00Z'
+
+terms:
+  - id: cls.source
+    label: source
+    notes: Generic classification for source entities.
+  - id: cls.chronicle
+    label: chronicle
+  - id: cls.cleric
+    label: cleric
