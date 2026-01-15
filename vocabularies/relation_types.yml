@@ -1,21 +1,34 @@
 schema_version: '1.0'
 namespace: rel
-updated_utc: '2026-01-14T00:00:00Z'
+updated_utc: '2026-01-15T00:00:00Z'
 
 # Controlled vocabulary for relation/predicate terms.
 # Semantic meaning is defined here; dataset assertions reference these ids.
-
 terms:
+  # Naming / designation
+  - id: rel.designated_as
+    label: designated as
+    arity: value
+    notes: >
+      Canonical predicate for name/designation assertions. Use for persons, places,
+      and (by convention) for names applied to historical occurrences, without
+      minting event entities. See ONOMASTICS_POLICY.md and SPEC_ASSERTION_SHAPE.md.
+
+  # Backward-compatible synonym (prefer rel.designated_as going forward)
   - id: rel.named_as
     label: named as
     arity: value
-    notes: Name assertions; see ONOMASTICS_POLICY.md.
+    notes: >
+      Legacy naming predicate. Prefer rel.designated_as for new data; retained for
+      compatibility with earlier assertions.
 
+  # Characterization / classification
   - id: rel.characterized_as
     label: characterized as
     arity: value
     notes: Classification/characterization of an entity; often editorial/analytic.
 
+  # Core relations (object-arity)
   - id: rel.child_of
     label: child of
     arity: object
