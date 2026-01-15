@@ -1,35 +1,21 @@
-# Onomastics Policy
-
-*(Normalization and Authority Control)*
+# Onomastics Policy *(Normalization and Authority Control)*
 
 ## 1. Scope and Principles
-
 This policy governs how **names are modeled, normalized, and interpreted** within the corpus.
-Identity boundary decisions are governed by
-[NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md](NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md).
+Identity boundary decisions are governed by [NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md](NORMALIZATION_AND_AUTHORITY_CONTROL_POLICY.md).
 
 ### Core principles
-
-1. **Identity is singular; names are plural.**
-   An entity has one identity and may have many names.
-
-2. **Names are assertions, not attributes.**
-   Names are treated as first-class assertions with provenance, scope, and context.
-
-3. **Names encode usage, not essence.**
-   A name reflects how an entity is referred to by someone, somewhere, at some time.
-
-4. **Surface strings do not determine meaning.**
-   The same name string may represent different social functions across time or persons.
+1. **Identity is singular; names are plural.** An entity has one identity and may have many names.
+2. **Names are assertions, not attributes.** Names are treated as first-class assertions with provenance, scope, and context.
+3. **Names encode usage, not essence.** A name reflects how an entity is referred to by someone, somewhere, at some time.
+4. **Surface strings do not determine meaning.** The same name string may represent different social functions across time or persons.
 
 ---
 
 ## 2. Names as First-Class Assertions
+All names are modeled using the canonical designation predicate (e.g. `rel.designated_as`).
 
-All names are modeled using a canonical assertion type (e.g. `named_as`).
-
-A name assertion MAY include:
-
+A designation assertion MAY include:
 * name string
 * name kind
 * relation basis (if applicable)
@@ -39,18 +25,15 @@ A name assertion MAY include:
 * narrative or epistemic layer
 
 Names MUST NOT be:
-
 * hard-coded as entity fields
 * treated as immutable identifiers
 
 ---
 
 ## 3. Canonical Name Kinds
-
 The following **name kinds** are recognized as academically standard. The list is intentionally limited; precision is added via metadata, not proliferation.
 
 ### Core kinds
-
 * **primary** — default scholarly reference form
 * **birth_name** — name given at birth
 * **personal_name** — given name when distinct
@@ -69,18 +52,14 @@ No name kind implies ontology; all are descriptive.
 ---
 
 ## 4. Relational Name Modeling (General Rule)
-
 Names derived from **relationships** are modeled using a **relational basis**, not culture-specific categories.
 
 ### Relational basis
-
 A relational name MUST specify:
-
 * `name_kind: relational`
 * `relation_basis` (e.g., `child_of`, `parent_of`, `associated_with_place`)
 
 This subsumes:
-
 * patronymics
 * matronymics
 * teknonyms
@@ -89,16 +68,14 @@ This subsumes:
 * saint-of / follower-of forms
 
 ### Optional cultural specificity
-
 Culture-specific terms MAY be recorded as annotations, not required categories.
 
 Example:
-
 ```yml
 name_kind: relational
 relation_basis: parent_of
 cultural_term: teknonym
-```
+````
 
 **Policy rule:**
 
@@ -108,14 +85,10 @@ cultural_term: teknonym
 
 ## 5. Patronymics, Teknonyms, and Similar Forms
 
-* **Patronymics / matronymics**
-  → `relation_basis: child_of`
+* **Patronymics / matronymics** → `relation_basis: child_of`
+* **Teknonyms (e.g., Arabic kunya)** → `relation_basis: parent_of` → not family names; not hereditary by default
 
-* **Teknonyms (e.g., Arabic kunya)**
-  → `relation_basis: parent_of`
-  → not family names; not hereditary by default
-
-These are modeled as **name assertions**, optionally linked to a kinship assertion.
+These are modeled as **designation assertions**, optionally linked to a kinship assertion.
 
 ---
 
@@ -123,11 +96,11 @@ These are modeled as **name assertions**, optionally linked to a kinship asserti
 
 ### Earned names (e.g., *Germanicus*)
 
-* Modeled as:
+Modeled as:
 
-  * `name_kind: honorific`
-  * subtype optional (e.g., `victory_name`, *agnomen ex virtute*)
-* Basis may reference:
+* `name_kind: honorific`
+* subtype optional (e.g., `victory_name`, *agnomen ex virtute*)
+* basis may reference:
 
   * an event
   * a place
@@ -150,7 +123,7 @@ When an originally earned name becomes inherited:
 
 Instead:
 
-* create **distinct name assertions** with different `name_kind` and `basis`
+* create **distinct designation assertions** with different `name_kind` and `basis`
 
 Example pattern:
 
@@ -158,7 +131,6 @@ Example pattern:
 
   * `name_kind: honorific`
   * `basis: achievement`
-
 * Descendant:
 
   * `name_kind: family_name` (or lineage_name)
@@ -201,7 +173,7 @@ Names MUST NOT:
 
 ## 10. Provenance and Attestation
 
-Every name assertion SHOULD have provenance.
+Every designation assertion SHOULD have provenance.
 
 Allowed forms:
 
@@ -227,7 +199,19 @@ The same name string in different layers represents **different claims**, not di
 
 ---
 
-## 12. What Is Explicitly Forbidden
+## 12. Event / occurrence naming (non-ontological)
+
+The data model does not mint event entities by default. When sources name an occurrence (battle, council, revolt), record that naming as a **designation assertion** (e.g., `rel.designated_as`) with:
+
+* `value.text` = the name string as used
+* `value.language` and optional cultural context
+* appropriate provenance and narrative layer
+
+Multiple cultural names for a co-referent occurrence are represented as multiple designation assertions; the dataset does not require canonical event names.
+
+---
+
+## 13. What Is Explicitly Forbidden
 
 * Treating names as entity identifiers
 * Encoding ontology in name strings
@@ -237,6 +221,8 @@ The same name string in different layers represents **different claims**, not di
 
 ---
 
-## 13. Policy Summary (Normative)
+## 14. Policy Summary (Normative)
 
-> Names are first-class assertions that record how an entity is referred to, by whom, in what context, and with what social meaning. Relational semantics take precedence over culture-specific labels. Changes in name function are modeled through multiple assertions, not identity changes.
+> Names are first-class assertions that record how an entity is referred to, by whom, in what context, and with what social meaning. Relational semantics take precedence over culture-specific labels.
+
+Changes in name function are modeled through multiple assertions, not identity changes.
