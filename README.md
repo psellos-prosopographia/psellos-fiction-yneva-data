@@ -96,6 +96,16 @@ Assertions are never deleted to resolve contradiction; they coexist.
 
 ---
 
+### 2.2.1 Alternate entry point: assertion-first pipeline
+
+The repository supports an **assertion-first** pipeline as an alternate entry point when the
+fictional corpus does not yet exist or is being backfilled. This pipeline does **not** replace the
+source-first workflow; it formalizes a path for building assertion coverage first, then attaching
+sources later. See [ASSERTION_FIRST_PIPELINE.md](ASSERTION_FIRST_PIPELINE.md) for the steps and the
+placeholder layer requirements.
+
+---
+
 ### 2.3 Minimal core assertion operations
 
 The repository recognizes the following **minimal core assertion operations** as irreducible:
