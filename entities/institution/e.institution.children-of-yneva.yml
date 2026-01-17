@@ -1,0 +1,48 @@
+id: e.institution.children-of-yneva
+kind: institution
+label: Children of Yneva
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Children of Yneva
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.designated_as
+    value:
+      text: Ynevarin
+      language: und
+      name_kind: alternative_form
+      cultural_context: Romish
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      folk_heroes: true
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a4
+    predicate: rel.participates_in_event
+    object: e.institution.event-battle-second-temple
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

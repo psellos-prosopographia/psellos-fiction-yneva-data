@@ -1,0 +1,25 @@
+id: e.place.amorium
+kind: place
+label: Amorium
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Amorium
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.located_in
+    object: e.polity.duchy-of-keldar
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

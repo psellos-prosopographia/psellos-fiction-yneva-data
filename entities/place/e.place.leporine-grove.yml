@@ -1,0 +1,16 @@
+id: e.place.leporine-grove
+kind: place
+label: Leporine Grove
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Leporine Grove
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

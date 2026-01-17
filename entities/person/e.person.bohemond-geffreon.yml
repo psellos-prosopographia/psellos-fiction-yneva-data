@@ -1,0 +1,28 @@
+id: e.person.bohemond-geffreon
+kind: person
+label: Bohemond Geffreon
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Bohemond Geffreon
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.holds_office
+    object: e.office.mayor-of-the-palace-of-feynman
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: terminus_ante_quem
+      end_year: 737
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Abdicated the office in 737 A.R.

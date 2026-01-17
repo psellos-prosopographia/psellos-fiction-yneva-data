@@ -1,0 +1,16 @@
+id: e.person.darios-of-laum
+kind: person
+label: Darios of Laum
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Darios of Laum
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

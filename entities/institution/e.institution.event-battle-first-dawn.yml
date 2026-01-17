@@ -1,0 +1,49 @@
+id: e.institution.event-battle-first-dawn
+kind: institution
+label: Battle of the First Dawn
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Battle of the First Dawn
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      occurred_in_year: 744
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 744
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      defeated: e.person.inadeon-lissandra-asterope
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a4
+    predicate: rel.characterized_as
+    value:
+      ended_conflict: e.institution.radiant-crusade
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

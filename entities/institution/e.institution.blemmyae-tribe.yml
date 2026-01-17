@@ -1,0 +1,28 @@
+id: e.institution.blemmyae-tribe
+kind: institution
+label: Blemmyae tribe
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Blemmyae
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.related_to
+    object: e.person.brenna
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 719
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Adopted Brenna shortly after her birth.

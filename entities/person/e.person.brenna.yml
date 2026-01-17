@@ -1,11 +1,11 @@
-id: e.person.inadeon-lissandra-asterope
+id: e.person.brenna
 kind: person
-label: Inadeon-Lissandra Asterope
+label: Brenna
 assertions:
   - id: a1
     predicate: rel.designated_as
     value:
-      text: Inadeon-Lissandra Asterope
+      text: Brenna
       language: und
       name_kind: primary
     narrative_layer: L0.1
@@ -15,54 +15,59 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a2
-    predicate: rel.holds_office
-    object: e.office.priest-of-the-sun
-    narrative_layer: L0.1
-    time_scope:
-      qualifier: exact
-      start_year: 702
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Chosen by the Sun as Priest of the Sun in 702 A.R.
-  - id: a3
-    predicate: rel.characterized_as
-    value:
-      converts_population_to: e.institution.sollerism
-    narrative_layer: L0.1
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a4
-    predicate: rel.characterized_as
-    value:
-      reign_characterization: long
-    narrative_layer: L0.1
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a5
-    predicate: rel.characterized_as
-    value:
-      ethos: despotic
-    narrative_layer: L0.1
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a6
     predicate: rel.designated_as
     value:
-      text: Sundottir
+      text: Chlor
       language: und
-      name_kind: epithet
-      cultural_context: Nyelven
+      name_kind: birth_name
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.designated_as
+    value:
+      text: Brennabaniapli
+      language: und
+      name_kind: alias
+      cultural_context: Blemmisc
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Adoptive name meaning "Little-Raven whom the Earth speaks with."
+  - id: a4
+    predicate: rel.designated_as
+    value:
+      text: Breondisda
+      language: und
+      name_kind: adapted_form
+      cultural_context: Genlish
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Genlicized form of her birth name.
+  - id: a5
+    predicate: rel.designated_as
+    value:
+      text: Geffreonda
+      language: und
+      name_kind: relational
+      cultural_context: Leporine Grove
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Relational name used for Brenna as the wife of Clarus Geffreon.
+  - id: a6
+    predicate: rel.child_of
+    object: e.person.darios-of-laum
     narrative_layer: L0.1
     provenance:
       kind: editorial
@@ -70,11 +75,8 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a7
-    predicate: rel.designated_as
-    value:
-      text: Sunborn
-      language: und
-      name_kind: title_name
+    predicate: rel.child_of
+    object: e.person.peasant-mother-of-brenna
     narrative_layer: L0.1
     provenance:
       kind: editorial
@@ -82,43 +84,40 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a8
-    predicate: rel.designated_as
+    predicate: rel.characterized_as
     value:
-      text: Lady of the Scapulary
-      language: und
-      name_kind: epithet
+      birth_year: 719
     narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 719
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a9
-    predicate: rel.designated_as
-    value:
-      text: Inadeon Gulltunga
-      language: und
-      name_kind: epithet
-      cultural_context: Sakavish
-    narrative_layer: L0.1
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a10
-    predicate: rel.characterized_as
-    value:
-      born_in: e.place.amorium
+    predicate: rel.related_to
+    object: e.institution.blemmyae-tribe
     narrative_layer: L0.1
     time_scope:
       qualifier: exact
-      start_year: 693
+      start_year: 719
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
+        notes: Adopted by the Blemmyae shortly after birth.
+  - id: a10
+    predicate: rel.characterized_as
+    value:
+      chosen_as: Spirit Warrior
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Chosen by the earth as the fabled Spirit Warrior.
   - id: a11
     predicate: rel.participates_in_event
     object: e.institution.event-battle-first-dawn
@@ -129,35 +128,33 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a12
-    predicate: rel.participates_in_event
-    object: e.institution.event-battle-second-temple
+    predicate: rel.related_to
+    object: e.person.clarus-geffreon
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 745
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Married Clarus Geffreon in 745 A.R.
+  - id: a13
+    predicate: rel.characterized_as
+    value:
+      children_count_with: e.person.clarus-geffreon
+      children_count: 3
     narrative_layer: L0.1
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a13
-    predicate: rel.characterized_as
-    value:
-      killed_in_event: e.institution.event-battle-first-dawn
-    narrative_layer: L0.1
-    time_scope:
-      qualifier: exact
-      start_year: 744
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Killed in the Battle of the First Dawn in 744 A.R.
   - id: a14
     predicate: rel.characterized_as
     value:
-      birth_year: 693
+      member_of: e.institution.children-of-yneva
     narrative_layer: L0.1
-    time_scope:
-      qualifier: exact
-      start_year: 693
     provenance:
       kind: editorial
       editorial_synthesis:
@@ -166,10 +163,13 @@ assertions:
   - id: a15
     predicate: rel.characterized_as
     value:
-      leads: e.institution.radiant-crusade
+      abandoned_in: e.place.forests-west-of-bool
     narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 719
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
+        notes: Abandoned in the forests west of Bool shortly after birth.
