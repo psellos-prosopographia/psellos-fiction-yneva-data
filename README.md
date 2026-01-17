@@ -102,7 +102,8 @@ The repository supports an **assertion-first** pipeline as an alternate entry po
 fictional corpus does not yet exist or is being backfilled. This pipeline does **not** replace the
 source-first workflow; it formalizes a path for building assertion coverage first, then attaching
 sources later. See [ASSERTION_FIRST_PIPELINE.md](ASSERTION_FIRST_PIPELINE.md) for the steps and the
-placeholder layer requirements.
+placeholder layer requirements. For LLM-assisted corpus conversion guidance and rejection criteria,
+see [ASSERTION_FIRST_CONVERSION_GUIDE.md](ASSERTION_FIRST_CONVERSION_GUIDE.md).
 
 ---
 
