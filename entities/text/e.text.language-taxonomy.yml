@@ -1,0 +1,284 @@
+id: e.text.language-taxonomy
+kind: text
+label: Language taxonomy (Magocratic)
+description: >
+  Editorial catalogue of canonical language identities and relations for the Yneva
+  setting. Language identifiers are modeled as vocabulary terms; relationships are
+  captured here as value-arity assertions.
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Language taxonomy (Magocratic)
+      language: en
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Canonical label for the language taxonomy registry.
+
+  # II. Genealogical descent (strict inheritance only)
+  - id: a2
+    predicate: rel.descends_from
+    value:
+      child_language: lang.felerinic
+      parent_language: lang.enta
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a3
+    predicate: rel.descends_from
+    value:
+      child_language: lang.ynevo-vestish
+      parent_language: lang.aluterian
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a4
+    predicate: rel.descends_from
+    value:
+      child_language: lang.vestish
+      parent_language: lang.ynevo-vestish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a5
+    predicate: rel.descends_from
+    value:
+      child_language: lang.ancient-ynevan
+      parent_language: lang.ynevo-vestish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a6
+    predicate: rel.descends_from
+    value:
+      child_language: lang.romish
+      parent_language: lang.ancient-ynevan
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a7
+    predicate: rel.descends_from
+    value:
+      child_language: lang.goddish
+      parent_language: lang.ancient-ynevan
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a8
+    predicate: rel.descends_from
+    value:
+      child_language: lang.normish
+      parent_language: lang.goddish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a9
+    predicate: rel.descends_from
+    value:
+      child_language: lang.proto-sakavish
+      parent_language: lang.nyelfish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a10
+    predicate: rel.descends_from
+    value:
+      child_language: lang.sakavish
+      parent_language: lang.proto-sakavish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a11
+    predicate: rel.descends_from
+    value:
+      child_language: lang.lacurian
+      parent_language: lang.proto-sakavish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a12
+    predicate: rel.descends_from
+    value:
+      child_language: lang.talavish
+      parent_language: lang.nyelfish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+
+  # III. Dialect continuum / areal families (non-genealogical grouping)
+  - id: a13
+    predicate: rel.group_type
+    value:
+      group: group.heartland-languages
+      classification: cls.linguistic-dialect-continuum
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a14
+    predicate: rel.has_dialect_continuum
+    value:
+      language: lang.vestish
+      group: group.heartland-languages
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+
+  # IV. Contact, conquest, and language formation (non-genealogical)
+  - id: a15
+    predicate: rel.serves_as
+    value:
+      language: lang.romish
+      role: role.contact-language
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a16
+    predicate: rel.has_no_known_descendants
+    value:
+      language: lang.romish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+
+  - id: a17
+    predicate: rel.derives_lexical_stratum_from
+    value:
+      language: lang.genlish
+      source_language: lang.romish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a18
+    predicate: rel.derives_structural_base_from
+    value:
+      language: lang.genlish
+      source_language: lang.goddish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a19
+    predicate: rel.language_formation_process
+    value:
+      language: lang.genlish
+      process_type: cls.mixed-language
+      mechanism: cls.conquest-assimilation
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+
+  - id: a20
+    predicate: rel.derives_structural_base_from
+    value:
+      language: lang.halffish
+      source_language: lang.sakavish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a21
+    predicate: rel.derives_lexical_stratum_from
+    value:
+      language: lang.halffish
+      source_language: lang.goddish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a22
+    predicate: rel.language_formation_process
+    value:
+      language: lang.halffish
+      process_type: cls.mixed-language
+      mechanism: cls.elite-dominance
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+
+  # V. Learnability and physiology
+  - id: a23
+    predicate: rel.learnable_by
+    value:
+      language: lang.sakavish
+      species: e.species.human
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24
+    predicate: rel.native_to
+    value:
+      language: lang.sakavish
+      species: e.species.nyelf
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.

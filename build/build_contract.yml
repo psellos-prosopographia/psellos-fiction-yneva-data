@@ -13,7 +13,7 @@ contract:
   id_patterns:
     # Canonical ID syntax is defined in ID_POLICY.md.
     entity_id_regex: '^e\.(person|polity|institution|office|place|artifact|text|source|species)\.[a-z0-9-]+$'
-    vocabulary_term_id_regex: '^(rel|evt|role|cls|state|title)\.[a-z0-9-]+$'
+    vocabulary_term_id_regex: '^(rel|evt|role|cls|state|title|lang|group)\.[a-z0-9-]+$'
     layer_id_regex: '^L[0-9]+\.[0-9]+$'
     rule_regime_id_regex: '^r\.[a-z0-9-]+$'
 

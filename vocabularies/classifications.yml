@@ -1,6 +1,6 @@
 schema_version: '1.0'
 namespace: cls
-updated_utc: '2026-01-14T00:00:00Z'
+updated_utc: '2026-01-21T00:00:00Z'
 
 terms:
   - id: cls.source
@@ -10,3 +10,11 @@ terms:
     label: chronicle
   - id: cls.cleric
     label: cleric
+  - id: cls.linguistic-dialect-continuum
+    label: linguistic dialect continuum
+  - id: cls.mixed-language
+    label: mixed language
+  - id: cls.conquest-assimilation
+    label: conquest assimilation
+  - id: cls.elite-dominance
+    label: elite dominance

@@ -1,0 +1,37 @@
+schema_version: '1.0'
+namespace: lang
+updated_utc: '2026-01-21T00:00:00Z'
+
+terms:
+  - id: lang.enta
+    label: Enta
+  - id: lang.felerinic
+    label: Felerinic
+  - id: lang.aluterian
+    label: Aluterian
+  - id: lang.ynevo-vestish
+    label: Ynevo-Vestish
+  - id: lang.vestish
+    label: Vestish
+  - id: lang.ancient-ynevan
+    label: Ancient Ynevan
+  - id: lang.romish
+    label: Romish
+  - id: lang.goddish
+    label: Goddish
+  - id: lang.genlish
+    label: Genlish
+  - id: lang.normish
+    label: Normish
+  - id: lang.nyelfish
+    label: Nyelfish
+  - id: lang.proto-sakavish
+    label: Proto-Sakavish
+  - id: lang.sakavish
+    label: Sakavish
+  - id: lang.halffish
+    label: Halffish
+  - id: lang.lacurian
+    label: Lacurian
+  - id: lang.talavish
+    label: Talavish
