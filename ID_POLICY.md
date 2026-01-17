@@ -21,7 +21,7 @@ regime-id     = "r." slug
 
 entity-kind   = "person" / "polity" / "institution" / "office" / "place" / "artifact" / "text" / "source" / "species"
 slug          = 1*(lower / digit / "-")
-vocab-namespace = "rel" / "evt" / "role" / "cls" / "state" / "title"
+vocab-namespace = "rel" / "evt" / "role" / "cls" / "state" / "title" / "lang" / "group"
 
 lower         = %x61-7A
  digit        = %x30-39
@@ -30,7 +30,7 @@ lower         = %x61-7A
 ## 2) Type prefixes
 
 Entity IDs use the `e.<kind>.` prefix with one of the supported entity kinds listed above. Vocabulary
-terms use their vocabulary namespace prefixes (e.g., `rel.`, `evt.`).
+terms use their vocabulary namespace prefixes (e.g., `rel.`, `evt.`, `lang.`, `group.`).
 
 ## 3) Immutability and corrections
 

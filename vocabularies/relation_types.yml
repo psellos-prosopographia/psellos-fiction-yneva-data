@@ -1,6 +1,6 @@
 schema_version: '1.0'
 namespace: rel
-updated_utc: '2026-01-15T00:00:00Z'
+updated_utc: '2026-01-21T00:00:00Z'
 
 # Controlled vocabulary for relation/predicate terms.
 # Semantic meaning is defined here; dataset assertions reference these ids.
@@ -27,6 +27,72 @@ terms:
     label: characterized as
     arity: value
     notes: Classification/characterization of an entity; often editorial/analytic.
+
+  # Language taxonomy relations (value-arity, catalogued in a text registry)
+  - id: rel.descends_from
+    label: descends from
+    arity: value
+    notes: >
+      Genealogical descent between language terms. Value mapping keys: child_language,
+      parent_language.
+
+  - id: rel.derives_lexical_stratum_from
+    label: derives lexical stratum from
+    arity: value
+    notes: >
+      Lexical stratum derivation for mixed or contact languages. Value mapping keys:
+      language, source_language.
+
+  - id: rel.derives_structural_base_from
+    label: derives structural base from
+    arity: value
+    notes: >
+      Structural base derivation for mixed or contact languages. Value mapping keys:
+      language, source_language.
+
+  - id: rel.language_formation_process
+    label: language formation process
+    arity: value
+    notes: >
+      Describes the formation process for a language. Value mapping keys: language,
+      process_type, mechanism.
+
+  - id: rel.group_type
+    label: group type
+    arity: value
+    notes: >
+      Classifies a language group or continuum. Value mapping keys: group, classification.
+
+  - id: rel.has_dialect_continuum
+    label: has dialect continuum
+    arity: value
+    notes: >
+      Associates a language with a dialect continuum group. Value mapping keys: language,
+      group.
+
+  - id: rel.serves_as
+    label: serves as
+    arity: value
+    notes: >
+      Assigns a language role (e.g., contact language). Value mapping keys: language, role.
+
+  - id: rel.has_no_known_descendants
+    label: has no known descendants
+    arity: value
+    notes: >
+      Flags that a language has no known descendants. Value mapping keys: language.
+
+  - id: rel.learnable_by
+    label: learnable by
+    arity: value
+    notes: >
+      Indicates learnability of a language by a species. Value mapping keys: language, species.
+
+  - id: rel.native_to
+    label: native to
+    arity: value
+    notes: >
+      Indicates native speaker species for a language. Value mapping keys: language, species.
 
   # Core relations (object-arity)
   - id: rel.child_of

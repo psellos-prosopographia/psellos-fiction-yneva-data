@@ -1,5 +1,7 @@
 schema_version: '1.0'
 namespace: role
-updated_utc: '2026-01-14T00:00:00Z'
+updated_utc: '2026-01-21T00:00:00Z'
 
-terms: []
+terms:
+  - id: role.contact-language
+    label: contact language
