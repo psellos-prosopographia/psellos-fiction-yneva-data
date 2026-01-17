@@ -1,0 +1,39 @@
+id: e.institution.event-felierni-terror
+kind: institution
+label: Felierni Terror
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Felierni Terror
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      outcome: demons_defeated
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: -184
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline; end year encoded as negative for B.R.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      human_death_fraction: "1/3"
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

@@ -1,0 +1,16 @@
+id: e.place.ynevan-plateau
+kind: place
+label: Ynevan Plateau
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Ynevan Plateau
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

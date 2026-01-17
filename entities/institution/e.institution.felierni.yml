@@ -1,0 +1,25 @@
+id: e.institution.felierni
+kind: institution
+label: Felierni
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Felierni
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.identified_with
+    object: e.institution.demon
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

@@ -1,0 +1,26 @@
+id: e.institution.event-founding-bergthur
+kind: institution
+label: Founding of Bergthur
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Founding of Bergthur
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      dedicated_to: e.institution.planetarians
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

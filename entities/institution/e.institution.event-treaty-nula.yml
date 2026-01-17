@@ -1,0 +1,41 @@
+id: e.institution.event-treaty-nula
+kind: institution
+label: Treaty of Nula
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Treaty of Nula
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      signed: true
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 97
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      enables_rise_of:
+        - e.polity.euler
+        - e.polity.godel
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

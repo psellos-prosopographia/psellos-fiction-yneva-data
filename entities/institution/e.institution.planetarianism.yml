@@ -1,0 +1,62 @@
+id: e.institution.planetarianism
+kind: institution
+label: Planetarianism
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Planetarianism
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      deity_set_of: e.institution.planetarians
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      converts_majority_of: e.institution.humanity
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a4
+    predicate: rel.characterized_as
+    value:
+      stringent: true
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: after
+      start_year: -184
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline; post-Felierni Terror.
+  - id: a5
+    predicate: rel.characterized_as
+    value:
+      schismatic: true
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: after
+      start_year: -184
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline; post-Felierni Terror.

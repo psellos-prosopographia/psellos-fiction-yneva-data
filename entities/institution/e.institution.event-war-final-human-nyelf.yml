@@ -1,0 +1,29 @@
+id: e.institution.event-war-final-human-nyelf
+kind: institution
+label: Final human–nyelf war
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Final human–nyelf war
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      begins: true
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: -22
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline; B.R. year encoded as negative.
