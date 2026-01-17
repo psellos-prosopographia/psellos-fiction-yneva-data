@@ -17,7 +17,7 @@ assertions:
   - id: a2
     predicate: rel.characterized_as
     value:
-      is_ethnos_of: e.institution.human
+      is_ethnos_of: e.species.human
     narrative_layer: L0.1
     provenance:
       kind: editorial

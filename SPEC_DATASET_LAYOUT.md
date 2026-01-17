@@ -24,7 +24,7 @@ Canonical entity files live under `entities/<kind>/`.
 
 `<kind>` MUST be one of:
 
-`person`, `polity`, `institution`, `office`, `place`, `artifact`, `text`, `source`.
+`person`, `polity`, `institution`, `office`, `place`, `artifact`, `text`, `source`, `species`.
 
 ## One entity = one file
 

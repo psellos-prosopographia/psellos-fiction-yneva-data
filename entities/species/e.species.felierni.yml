@@ -1,6 +1,9 @@
-id: e.institution.felierni
-kind: institution
+id: e.species.felierni
+kind: species
 label: Felierni
+redirects_from:
+  - e.institution.felierni
+notes: "Singular/adjectival: felierni. Plural: felierni."
 assertions:
   - id: a1
     predicate: rel.designated_as

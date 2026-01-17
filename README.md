@@ -6,7 +6,7 @@ This repository is the **canonical data and modeling repository** for a fictiona
 
 Its purpose is to:
 
-* Represent **people, polities, institutions, offices, places, artifacts, and sources** as stable entities.
+* Represent **people, polities, institutions, species, offices, places, artifacts, and sources** as stable entities.
 * Represent **all historical, legendary, analytic, and propagandistic statements** as *attributed, time-scoped assertions*.
 * Support **multiple cultures, polities, and legal regimes** with differing rules (kinship, office eligibility, marriage, adoption, legitimacy, territory).
 * Preserve **ambiguity, contradiction, and narrative layering** as first-class data, not errors.
@@ -71,6 +71,7 @@ Stable identifiers for things the world talks about:
 * persons (including disputed or composite identities)
 * polities and polity phases (polity-as-process)
 * institutions (religious, academic, legal, political)
+* species (biological or mythic kinds of beings)
 * offices (roles distinct from holders)
 * places and regions (with multiple names and fuzzy extents)
 * artifacts and symbols (ritual, political, ethnic)
@@ -244,6 +245,7 @@ High-level overview:
   /person
   /polity
   /institution
+  /species
   /office
   /place
   /artifact

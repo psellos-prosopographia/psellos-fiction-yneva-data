@@ -17,7 +17,7 @@ assertions:
   - id: a2
     predicate: rel.characterized_as
     value:
-      imposes_ban_on_alliance_with: e.institution.humanity
+      imposes_ban_on_alliance_with: e.species.human
     narrative_layer: L0.1
     provenance:
       kind: editorial

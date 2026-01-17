@@ -19,7 +19,7 @@ source-id     = "s." slug
 layer-id      = "l." slug
 regime-id     = "r." slug
 
-entity-kind   = "person" / "polity" / "institution" / "office" / "place" / "artifact" / "text" / "source"
+entity-kind   = "person" / "polity" / "institution" / "office" / "place" / "artifact" / "text" / "source" / "species"
 slug          = 1*(lower / digit / "-")
 vocab-namespace = "rel" / "evt" / "role" / "cls" / "state" / "title"
 

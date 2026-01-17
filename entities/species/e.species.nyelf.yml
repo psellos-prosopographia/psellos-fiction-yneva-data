@@ -1,6 +1,9 @@
-id: e.institution.nyelf
-kind: institution
+id: e.species.nyelf
+kind: species
 label: Nyelves
+redirects_from:
+  - e.institution.nyelf
+notes: "Singular/adjectival: nyelf. Plural: nyelves."
 assertions:
   - id: a1
     predicate: rel.designated_as
