@@ -1,11 +1,11 @@
-id: e.person.inadeon-lissandra-asterope
+id: e.person.clarus-geffreon
 kind: person
-label: Inadeon-Lissandra Asterope
+label: Clarus Geffreon
 assertions:
   - id: a1
     predicate: rel.designated_as
     value:
-      text: Inadeon-Lissandra Asterope
+      text: Clarus Geffreon
       language: und
       name_kind: primary
     narrative_layer: L0.1
@@ -15,21 +15,26 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a2
-    predicate: rel.holds_office
-    object: e.office.priest-of-the-sun
+    predicate: rel.designated_as
+    value:
+      text: Blarstjarna
+      language: und
+      name_kind: byname
+      cultural_context: Leporine Grove
     narrative_layer: L0.1
-    time_scope:
-      qualifier: exact
-      start_year: 702
+    notes: Used as a name for Clarus as a descendant of Blewagan.
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
-        notes: Chosen by the Sun as Priest of the Sun in 702 A.R.
+        notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a3
-    predicate: rel.characterized_as
+    predicate: rel.designated_as
     value:
-      converts_population_to: e.institution.sollerism
+      text: Clauracius
+      language: und
+      name_kind: alias
+      cultural_context: playwright
     narrative_layer: L0.1
     provenance:
       kind: editorial
@@ -37,9 +42,8 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a4
-    predicate: rel.characterized_as
-    value:
-      reign_characterization: long
+    predicate: rel.child_of
+    object: e.person.bohemond-geffreon
     narrative_layer: L0.1
     provenance:
       kind: editorial
@@ -47,9 +51,8 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a5
-    predicate: rel.characterized_as
-    value:
-      ethos: despotic
+    predicate: rel.child_of
+    object: e.person.adelaide-cartaro
     narrative_layer: L0.1
     provenance:
       kind: editorial
@@ -57,24 +60,22 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a6
-    predicate: rel.designated_as
+    predicate: rel.characterized_as
     value:
-      text: Sundottir
-      language: und
-      name_kind: epithet
-      cultural_context: Nyelven
+      birth_year: 723
     narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 723
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a7
-    predicate: rel.designated_as
+    predicate: rel.characterized_as
     value:
-      text: Sunborn
-      language: und
-      name_kind: title_name
+      only_child: true
     narrative_layer: L0.1
     provenance:
       kind: editorial
@@ -82,44 +83,18 @@ assertions:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a8
-    predicate: rel.designated_as
-    value:
-      text: Lady of the Scapulary
-      language: und
-      name_kind: epithet
-    narrative_layer: L0.1
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a9
-    predicate: rel.designated_as
-    value:
-      text: Inadeon Gulltunga
-      language: und
-      name_kind: epithet
-      cultural_context: Sakavish
-    narrative_layer: L0.1
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a10
-    predicate: rel.characterized_as
-    value:
-      born_in: e.place.amorium
+    predicate: rel.holds_office
+    object: e.office.mayor-of-the-palace-of-feynman
     narrative_layer: L0.1
     time_scope:
       qualifier: exact
-      start_year: 693
+      start_year: 737
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a11
+        notes: Succeeded Bohemond Geffreon in 737 A.R.
+  - id: a9
     predicate: rel.participates_in_event
     object: e.institution.event-battle-first-dawn
     narrative_layer: L0.1
@@ -128,45 +103,33 @@ assertions:
       editorial_synthesis:
         method: synthesis
         notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a10
+    predicate: rel.related_to
+    object: e.person.brenna
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 745
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Married Brenna in 745 A.R.
+  - id: a11
+    predicate: rel.characterized_as
+    value:
+      children_count_with: e.person.brenna
+      children_count: 3
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a12
-    predicate: rel.participates_in_event
-    object: e.institution.event-battle-second-temple
-    narrative_layer: L0.1
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a13
     predicate: rel.characterized_as
     value:
-      killed_in_event: e.institution.event-battle-first-dawn
-    narrative_layer: L0.1
-    time_scope:
-      qualifier: exact
-      start_year: 744
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Killed in the Battle of the First Dawn in 744 A.R.
-  - id: a14
-    predicate: rel.characterized_as
-    value:
-      birth_year: 693
-    narrative_layer: L0.1
-    time_scope:
-      qualifier: exact
-      start_year: 693
-    provenance:
-      kind: editorial
-      editorial_synthesis:
-        method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
-  - id: a15
-    predicate: rel.characterized_as
-    value:
-      leads: e.institution.radiant-crusade
+      member_of: e.institution.children-of-yneva
     narrative_layer: L0.1
     provenance:
       kind: editorial

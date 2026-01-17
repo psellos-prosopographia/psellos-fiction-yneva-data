@@ -1,0 +1,35 @@
+id: e.person.sister-anna
+kind: person
+label: Sister Anna
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Sister Anna
+      language: und
+      name_kind: title_name
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      nun_of: e.institution.planetarian-church-of-canthor
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.related_to
+    object: e.person.erin-of-canthor
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Raised Erin of Canthor as a child.

@@ -1,0 +1,16 @@
+id: e.person.peasant-mother-of-brenna
+kind: person
+label: Peasant mother of Brenna
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Peasant mother of Brenna
+      language: und
+      name_kind: relational
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

@@ -1,0 +1,79 @@
+id: e.person.tiberius-rolf
+kind: person
+label: Tiberius Rolf
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Tiberius Rolf
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.child_of
+    object: e.person.tiberius-roland
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.child_of
+    object: e.person.martina
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a4
+    predicate: rel.characterized_as
+    value:
+      born_in: e.place.euler
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 728
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a5
+    predicate: rel.characterized_as
+    value:
+      conscripted_by: e.institution.radiant-crusade
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 738
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Conscripted into the Radiant Crusade in 738 A.R.
+  - id: a6
+    predicate: rel.participates_in_event
+    object: e.institution.event-battle-first-dawn
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a7
+    predicate: rel.characterized_as
+    value:
+      member_of: e.institution.children-of-yneva
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

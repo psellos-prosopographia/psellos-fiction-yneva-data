@@ -1,0 +1,113 @@
+id: e.person.erin-of-canthor
+kind: person
+label: Erin of Canthor
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Erin of Canthor
+      language: und
+      name_kind: relational
+      cultural_context: Canthor
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.designated_as
+    value:
+      text: Blessed child
+      language: und
+      name_kind: epithet
+      cultural_context: Inadeon
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      born_in: e.place.canthor
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 733
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a4
+    predicate: rel.characterized_as
+    value:
+      parents_unknown: true
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a5
+    predicate: rel.characterized_as
+    value:
+      orphaned_young: true
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a6
+    predicate: rel.related_to
+    object: e.person.sister-anna
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Raised by Sister Anna in Canthor.
+  - id: a7
+    predicate: rel.related_to
+    object: e.person.wizard-of-canthor
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 742
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Adopted by the Wizard of Canthor in 742 A.R.
+  - id: a8
+    predicate: rel.characterized_as
+    value:
+      innate_magic: chloromancy
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a9
+    predicate: rel.participates_in_event
+    object: e.institution.event-battle-first-dawn
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a10
+    predicate: rel.characterized_as
+    value:
+      member_of: e.institution.children-of-yneva
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

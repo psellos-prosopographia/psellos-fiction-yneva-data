@@ -1,0 +1,48 @@
+id: e.person.wizard-of-canthor
+kind: person
+label: Wizard of Canthor
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Wizard of Canthor
+      language: und
+      name_kind: title_name
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      occupation: wizard
+      lifestyle: hermit
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.related_to
+    object: e.person.erin-of-canthor
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 742
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Adopted Erin of Canthor in 742 A.R.
+  - id: a4
+    predicate: rel.participates_in_event
+    object: e.institution.event-battle-first-dawn
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Involved in the overthrow of Inadeon Lissandra Asterope.
