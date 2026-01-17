@@ -37,7 +37,7 @@ assertions:
   - id: a4
     predicate: rel.characterized_as
     value:
-      species: e.institution.human
+      species: e.species.human
     narrative_layer: L0.1
     provenance:
       kind: editorial

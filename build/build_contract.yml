@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_utc: '2026-01-15T00:00:00Z'
+updated_utc: '2026-01-20T00:00:00Z'
 
 # Normative build/validation contract for dataset elements.
 # Structural validity and reference integrity only.
@@ -12,7 +12,7 @@ contract:
 
   id_patterns:
     # Canonical ID syntax is defined in ID_POLICY.md.
-    entity_id_regex: '^e\.(person|polity|institution|office|place|artifact|text|source)\.[a-z0-9-]+$'
+    entity_id_regex: '^e\.(person|polity|institution|office|place|artifact|text|source|species)\.[a-z0-9-]+$'
     vocabulary_term_id_regex: '^(rel|evt|role|cls|state|title)\.[a-z0-9-]+$'
     layer_id_regex: '^L[0-9]+\.[0-9]+$'
     rule_regime_id_regex: '^r\.[a-z0-9-]+$'
@@ -46,6 +46,7 @@ contract:
         artifact: entities/artifact
         text: entities/text
         source: entities/source
+        species: entities/species
 
   elements:
     entity:
@@ -81,6 +82,7 @@ contract:
         - artifact
         - text
         - source
+        - species
 
     assertions:
       assertion:

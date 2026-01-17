@@ -42,6 +42,7 @@ The following entity types are permitted as **canonical identities**:
 - `source`
 - `institution`
 - `religion`
+- `species`
 
 No entity types are explicitly forbidden; prohibition is implemented through validation rules.
 

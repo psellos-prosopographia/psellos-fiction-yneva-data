@@ -16,6 +16,7 @@ Entity files live under:
 
 - `entities/person/`
 - `entities/place/`
+- `entities/species/`
 - `entities/source/`
 - (and other entity kinds listed in `ID_POLICY.md`)
 
@@ -50,7 +51,7 @@ Optional top-level keys are allowed, but must remain minimal and non-semantic:
 
 Must be one of:
 
-`person`, `polity`, `institution`, `office`, `place`, `artifact`, `text`, `source`.
+`person`, `polity`, `institution`, `office`, `place`, `artifact`, `text`, `source`, `species`.
 
 #### `label` (required)
 

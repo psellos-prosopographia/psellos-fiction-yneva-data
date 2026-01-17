@@ -18,7 +18,7 @@ assertions:
     predicate: rel.characterized_as
     value:
       allies_with_against:
-        ally: e.institution.humanity
+        ally: e.species.human
         enemy: e.institution.demon
     narrative_layer: L0.1
     provenance:

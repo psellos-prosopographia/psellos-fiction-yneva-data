@@ -27,7 +27,7 @@ assertions:
   - id: a3
     predicate: rel.characterized_as
     value:
-      converts_majority_of: e.institution.humanity
+      converts_majority_of: e.species.human
     narrative_layer: L0.1
     provenance:
       kind: editorial

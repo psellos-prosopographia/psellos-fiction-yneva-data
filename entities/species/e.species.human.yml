@@ -1,6 +1,11 @@
-id: e.institution.human
-kind: institution
+id: e.species.human
+kind: species
 label: Humans
+redirects_from:
+  - e.institution.human
+  - e.institution.humanity
+  - e.species.humanity
+notes: "Singular/adjectival: human. Plural: humans."
 assertions:
   - id: a1
     predicate: rel.designated_as

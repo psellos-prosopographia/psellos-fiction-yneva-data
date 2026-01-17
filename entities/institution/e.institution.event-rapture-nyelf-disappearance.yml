@@ -17,7 +17,7 @@ assertions:
   - id: a2
     predicate: rel.characterized_as
     value:
-      mass_disappearance_of: e.institution.nyelf
+      mass_disappearance_of: e.species.nyelf
     narrative_layer: L0.1
     provenance:
       kind: editorial

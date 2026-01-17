@@ -26,7 +26,7 @@ assertions:
         notes: Assertion-first conversion from the L0.1 narrative outline.
   - id: a3
     predicate: rel.identified_with
-    object: e.institution.felierni
+    object: e.species.felierni
     narrative_layer: L0.1
     provenance:
       kind: editorial
