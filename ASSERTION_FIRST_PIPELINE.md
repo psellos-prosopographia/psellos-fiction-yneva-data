@@ -26,6 +26,18 @@ created.
 5. **Track unresolved source placeholders** so later ingestion can backfill attestations without
    reworking the assertion corpus.
 
+## Required reference specs (keep updated)
+
+Use these canonical documents when drafting or validating assertion-first material:
+
+* `SPEC_ASSERTION_SHAPE.md` — assertion structure and required fields.
+* `SPEC_PROVENANCE.md` — provenance encoding rules.
+* `SPEC_TIME_SCOPE.md` — time scoping requirements.
+* `SPEC_ELEMENT_FORMAT.md` — formatting and element conventions.
+* `ID_POLICY.md` — identifier conventions.
+* `SPEC_DATASET_LAYOUT.md` — canonical file placement.
+* `L_LAYER_CATALOGUE.md` — narrative layer registry and IDs.
+
 ## Placeholder canon requirement (assertion-first)
 
 When using placeholder canon or narrative notes as the basis for assertions, **the narrative layer
@@ -45,4 +57,3 @@ later be reconciled with the fictional corpus without losing epistemic provenanc
 * The **assertion-first pipeline** acts as an alternate entry point with a clear bridge to later
   source ingestion: assertions should already carry layer + provenance scaffolding so that sources
   can be attached without rewriting assertion semantics.
-
