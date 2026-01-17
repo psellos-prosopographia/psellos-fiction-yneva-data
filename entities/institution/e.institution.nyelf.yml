@@ -1,0 +1,38 @@
+id: e.institution.nyelf
+kind: institution
+label: Nyelves
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Nyelves
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      is_species: true
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      habitat_characterization:
+        forests_deep: true
+        shores_far: true
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

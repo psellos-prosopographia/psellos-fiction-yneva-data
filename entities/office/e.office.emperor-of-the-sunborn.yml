@@ -1,0 +1,16 @@
+id: e.office.emperor-of-the-sunborn
+kind: office
+label: Emperor of the Sunborn
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Emperor of the Sunborn
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

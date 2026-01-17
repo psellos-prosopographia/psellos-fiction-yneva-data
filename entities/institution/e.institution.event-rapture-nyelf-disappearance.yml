@@ -1,0 +1,26 @@
+id: e.institution.event-rapture-nyelf-disappearance
+kind: institution
+label: Nyelf disappearance
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Nyelf disappearance
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      mass_disappearance_of: e.institution.nyelf
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

@@ -1,0 +1,44 @@
+id: e.person.vanadarin
+kind: person
+label: Vanadarin
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Vanadarin
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.holds_office
+    object: e.office.rathic-lord
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      leads: e.institution.raths
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a4
+    predicate: rel.participates_in_event
+    object: e.institution.event-founding-bergthur
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

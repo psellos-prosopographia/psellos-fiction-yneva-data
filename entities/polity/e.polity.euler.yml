@@ -1,0 +1,56 @@
+id: e.polity.euler
+kind: polity
+label: Kingdom of Euler
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Kingdom of Euler
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      rank: great_kingdom
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      species: e.institution.human
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a4
+    predicate: rel.related_to
+    object: e.polity.godel
+    narrative_layer: L0.1
+    notes: Rival polity.
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a5
+    predicate: rel.characterized_as
+    value:
+      devoted_to: e.institution.planetarians
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

@@ -1,0 +1,55 @@
+id: e.person.inadeon-lissandra-asterope
+kind: person
+label: Inadeon-Lissandra Asterope
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Inadeon-Lissandra Asterope
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.holds_office
+    object: e.office.priest
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      converts_population_to: e.institution.sollerism
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a4
+    predicate: rel.characterized_as
+    value:
+      reign_characterization: long
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a5
+    predicate: rel.characterized_as
+    value:
+      ethos: despotic
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.

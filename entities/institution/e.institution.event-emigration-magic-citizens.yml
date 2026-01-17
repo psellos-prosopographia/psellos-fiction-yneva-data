@@ -1,0 +1,29 @@
+id: e.institution.event-emigration-magic-citizens
+kind: institution
+label: Emigration of magic citizens
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Emigration of magic citizens
+      language: und
+      name_kind: primary
+    narrative_layer: L0.1
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      occurs: true
+    narrative_layer: L0.1
+    time_scope:
+      qualifier: exact
+      start_year: 412
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the L0.1 narrative outline.
