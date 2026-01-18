@@ -1,25 +1,25 @@
-id: e.place.bergthur
-kind: place
-label: Bergthur
+id: e.person.hamford-the-elder
+kind: person
+label: Hamford the Elder
 assertions:
   - id: a1
     predicate: rel.designated_as
     value:
-      text: Bergthur
+      text: Hamford the Elder
       language: und
       name_kind: primary
-    narrative_layer: L0.1
+    narrative_layer: L4.4
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
   - id: a2
-    predicate: rel.designated_as
+    predicate: rel.characterized_as
     value:
-      text: Mother City
-      language: und
-      name_kind: epithet
+      origin: Keldarian
+      role: historian
+      era: 1st_century_br
     narrative_layer: L4.4
     provenance:
       kind: editorial

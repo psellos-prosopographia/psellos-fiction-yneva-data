@@ -1,25 +1,24 @@
-id: e.place.bergthur
-kind: place
-label: Bergthur
+id: e.person.rekaz-of-omagda
+kind: person
+label: Rekaz of Omagda
 assertions:
   - id: a1
     predicate: rel.designated_as
     value:
-      text: Bergthur
+      text: Rekaz of Omagda
       language: und
-      name_kind: primary
-    narrative_layer: L0.1
+      name_kind: title
+    narrative_layer: L4.4
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
   - id: a2
-    predicate: rel.designated_as
+    predicate: rel.characterized_as
     value:
-      text: Mother City
-      language: und
-      name_kind: epithet
+      surrendered_after_death_of: e.person.noerlinga
+      committed_suicide: true
     narrative_layer: L4.4
     provenance:
       kind: editorial

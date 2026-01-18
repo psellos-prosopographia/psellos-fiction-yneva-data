@@ -1,0 +1,16 @@
+id: e.place.cappu
+kind: place
+label: Cappu
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Cappu
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).

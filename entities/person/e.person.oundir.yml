@@ -1,0 +1,39 @@
+id: e.person.oundir
+kind: person
+label: Oundir
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Oundir
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a2
+    predicate: rel.designated_as
+    value:
+      text: Oundin
+      language: und
+      name_kind: alternative_form
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      rival_tribe_prominence_with: e.institution.house-vanadarin
+      accepted_betrothal_for: e.person.himvalda
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).

@@ -1,0 +1,35 @@
+id: e.person.borindas
+kind: person
+label: Borindas
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Borindas
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a2
+    predicate: rel.child_of
+    object: e.person.ludergyos
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      died_after: battle_of_shorokyatar
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).

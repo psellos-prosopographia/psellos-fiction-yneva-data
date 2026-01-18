@@ -1,0 +1,138 @@
+id: e.person.enka
+kind: person
+label: Enka the Younger
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Enka the Younger
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a2
+    predicate: rel.child_of
+    object: e.person.marsten
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a3
+    predicate: rel.related_to
+    object: e.person.borlas
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a4
+    predicate: rel.characterized_as
+    value:
+      leadership_traits:
+        - conscientious
+        - able_administrator
+      succeeded: e.person.marsten
+      ruled_place: e.place.bergthur
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a5
+    predicate: rel.characterized_as
+    value:
+      infrastructure_work:
+        - expanded_aqueducts
+        - explored_new_water_sources
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a6
+    predicate: rel.characterized_as
+    value:
+      temple_extension:
+        temple: e.institution.planetarians
+        dedication: e.person.yneva-thurlaska
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a7
+    predicate: rel.characterized_as
+    value:
+      formalized_priesthood: e.institution.daughters-of-yneva
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a8
+    predicate: rel.characterized_as
+    value:
+      promulgated_laws: e.text.enkaian-laws
+      law_scope:
+        - marriage_dowries
+        - sexual_assault_punishments
+        - divorce_terms
+        - midwifery
+        - in_law_etiquette
+      exclusions:
+        - slaves
+        - some_servants
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a9
+    predicate: rel.characterized_as
+    value:
+      abdicated_in_favor_of: e.person.sylas
+      retired_to_villa_to_care_for: e.person.borlas
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a10
+    predicate: rel.characterized_as
+    value:
+      remembered_as:
+        - saintly_figure
+        - exemplar_of_patriotic_virtue
+        - exemplar_of_familial_virtue
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a11
+    predicate: rel.characterized_as
+    value:
+      children_of_union_with_borlas:
+        - e.person.sylas
+        - e.person.vanyalas
+      children_considered_part_of_line: e.institution.house-vanadarin
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).

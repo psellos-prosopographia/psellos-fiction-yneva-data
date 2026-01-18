@@ -1,0 +1,34 @@
+id: e.text.enkaian-laws
+kind: text
+label: Enkaian Laws
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Enkaian Laws
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      law_scope:
+        - marriage_dowries
+        - sexual_assault_punishments
+        - divorce_terms
+        - midwifery
+        - in_law_etiquette
+      exclusions:
+        - slaves
+        - some_servants
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).

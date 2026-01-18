@@ -1,0 +1,48 @@
+id: e.person.marsten
+kind: person
+label: Marsten
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Marsten
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a2
+    predicate: rel.characterized_as
+    value:
+      ruled_place: e.place.bergthur
+      ruled_duration_years: 17
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      death_context: harsh_winter_fever
+      possible_cause: meningitis
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a4
+    predicate: rel.characterized_as
+    value:
+      posthumous_attribution: curse_by_fleeing_foernumkin_chief
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
