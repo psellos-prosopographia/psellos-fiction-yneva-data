@@ -13,10 +13,28 @@ terms:
     label: Ynevo-Vestish
   - id: lang.vestish
     label: Vestish
+  - id: lang.peshic
+    label: Peshic
+  - id: lang.adinian
+    label: Adinian
   - id: lang.ancient-ynevan
     label: Ancient Ynevan
+  - id: lang.dalian
+    label: Dalian
+  - id: lang.undic
+    label: Undic
+  - id: lang.lobric
+    label: Lobric
+  - id: lang.old-romish
+    label: Old Romish
   - id: lang.romish
     label: Romish
+  - id: lang.ombrish
+    label: Ombrish
+  - id: lang.oscan
+    label: Oscan
+  - id: lang.ynedric
+    label: Ynedric
   - id: lang.goddish
     label: Goddish
   - id: lang.genlish
@@ -29,9 +47,13 @@ terms:
     label: Proto-Sakavish
   - id: lang.sakavish
     label: Sakavish
+  - id: lang.rendish
+    label: Rendish
   - id: lang.halffish
     label: Halffish
   - id: lang.lacurian
     label: Lacurian
+  - id: lang.old-talavish
+    label: Old Talavish
   - id: lang.talavish
     label: Talavish
