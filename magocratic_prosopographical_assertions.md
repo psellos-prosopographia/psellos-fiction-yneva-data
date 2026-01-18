@@ -87,195 +87,260 @@ The following assertions are extracted from chapters 2–5 and phrased for human
 
 ### Afgudslevin
 - entity_type: `concept`
+- definition: A term for halls or ritual framing that house captured local deities within Planetarian temples, translated as either 'Divine Fragments' or 'Protected Idols'.
 
 ### Antiig
 - entity_type: `place`
+- definition: A Kelpic city-state in the Uskelpes league that participates in the main trade circuit.
 
 ### Ardavir
 - entity_type: `ethnos`
+- definition: A tribe granted control of southern border lands after Sylas' southern campaign.
 
 ### Armaur
 - entity_type: `occupation`
+- definition: Elite soldiers in Sylas' personal retinue, described as wearing bronze cuirass and helmet.
 
 ### Borifson
 - entity_type: `person`
+- definition: A cousin of Borindas backed by Sylas to become chieftain of the diminished Dagnafir tribe.
 
 ### Borindas
 - entity_type: `person`
+- definition: Son of Dagnafir chieftain Ludergyos who died after the Battle of Shorokyatar.
 
 ### Borlas
 - entity_type: `person`
+- definition: A widower chief who married Enka and co-ruled, father of Sylas and Vanyalas.
 
 ### Cappu
 - entity_type: `place`
+- definition: A Uskelpes city-state that supplied armaments to Marsten, stirring controversy in the league.
 
 ### Caradunir
 - entity_type: `person`
+- definition: A slave boy who befriended Gronauga and worked with the Daughters of Yneva.
 
 ### Carpesidhe
 - entity_type: `place`
+- definition: A Rathic city-state allied with Markinse and Odoanca east of the Sylpin river.
 
 ### Dagnafir
 - entity_type: `ethnos`
+- definition: A tribe that suffered catastrophic losses after the Battle of Shorokyatar.
 
 ### Danig
 - entity_type: `person`
+- definition: Lord of Markinse who was offered Vanyalas' hand in marriage to cement alliance.
 
 ### Daughters of Yneva
 - entity_type: `institution`
+- definition: A priesthood order formalized by Enka, largely staffed by young aristocratic daughters.
 
 ### Driyar
 - entity_type: `time_unit`
+- definition: A three-year rotation period of the Rathic active army.
 
 ### Driyarskynning
 - entity_type: `law`
+- definition: The collective name for the first codified laws of military organization, the 'Three-Year Cycle'.
 
 ### Enka
 - entity_type: `person`
+- definition: Enka the Younger, Marsten's successor and a reforming ruler of Bergthur.
 
 ### Enkaian Laws
 - entity_type: `law`
+- definition: A set of familial laws on marriage, dowries, sexual assault, divorce, and midwifery enacted by Enka.
 
 ### Feir
 - entity_type: `place`
+- definition: A town near a narrow pass by the Hvasparsthur where Sylas met Foernumkin and Shorkin forces.
 
 ### Farkin
 - entity_type: `ethnos`
+- definition: A people who border northern Rathic tribes and ally with Weal against the Foernumkin.
 
 ### Foernumkin
 - entity_type: `ethnos`
+- definition: A rival people who fought the Raths and initiated wars against Bergthur.
 
 ### Gronauga
 - entity_type: `person`
+- definition: Son of Sylas and Himvalda, a studious prince nicknamed Litenstjarn.
 
 ### Hvasparsthur
 - entity_type: `place`
+- definition: A river near Feir and a battlefield during Sylas' early campaigns.
 
 ### Himvalda
 - entity_type: `person`
+- definition: Oundir's youngest daughter, betrothed and later married to Sylas, mother of Gronauga.
 
 ### Kelpic
 - entity_type: `ethnos`
+- definition: An Osrosidhan plateau culture whose city-states form part of the Uskelpes league.
 
 ### Litenstjarn
 - entity_type: `appellation`
+- definition: A nickname meaning 'Little Star' given to Gronauga for his green eyes and piety.
 
 ### Ludergyos
 - entity_type: `person`
+- definition: Chieftain of the Dagnafir tribe who died after the Battle of Shorokyatar.
 
 ### Markinse
 - entity_type: `place`
+- definition: A Rathic city-state east of the Sylpin river and part of a tripolis alliance.
 
 ### Markinze
 - entity_type: `place`
+- definition: A spelling variant for Markinse used in the narrative when describing western alliances.
 
 ### Marsten
 - entity_type: `person`
+- definition: A ruler of Bergthur who reigned for seventeen years and died after a harsh winter fever.
 
 ### Merigg
 - entity_type: `place`
+- definition: A smaller Uskelpes city-state that protected the south and west frontiers.
 
 ### Mother City
 - entity_type: `place`
+- definition: An epithet for Bergthur, the central city of the Raths.
 
 ### Noerlinga
 - entity_type: `person`
+- definition: Son of the Rekaz of Omagda who led an attack on Thuride and died in battle.
 
 ### Ocazca
 - entity_type: `place`
+- definition: A Pelkin settlement visited by Sylas to requisition tribute and pray to Yneva Ereyna.
 
 ### Odoanca
 - entity_type: `place`
+- definition: A Rathic city-state allied with Markinse and Carpesidhe east of the Sylpin river.
 
 ### Olkin
 - entity_type: `person`
+- definition: A trusted advisor of Sylas sent on diplomatic missions to the eastern city-states.
 
 ### Olkinadir
 - entity_type: `person`
+- definition: Son of Olkin who served as Gronauga's personal trainer.
 
 ### Omagda
 - entity_type: `place`
+- definition: A northern Rathic city-state involved in alliances and battles with Sylas' forces.
 
 ### Orvinfeord
 - entity_type: `place`
+- definition: A shore or gulf east of Feir where the First Miracle of Seyet occurred.
 
 ### Osrosidhic
 - entity_type: `ethnos`
+- definition: The broader cultural lineage of the early settlement on the Pyg that became Kelpic.
 
 ### Oundir
 - entity_type: `person`
+- definition: A rival chief whose tribe challenged Vanadarin's line and whose daughter Himvalda married Sylas.
 
 ### Oundin
 - entity_type: `person`
+- definition: A variant name for Oundir, cited as a leading commander against the Pelkin.
 
 ### Pelkin
 - entity_type: `ethnos`
+- definition: A horse-breeding people on the southwest border who paid tribute and guarded Varmalund.
 
 ### Pyg
 - entity_type: `place`
+- definition: The ancestral river after which the Kelpic city-state in the Uskelpes league was named.
 
 ### Rekaz
 - entity_type: `title`
+- definition: A title used by Sylas as ruler of Bergthur, signaling authority without claiming all Raths.
 
 ### Sanarkin
 - entity_type: `ethnos`
+- definition: A Rathic tribe whose chief Silpir confronted Sylas over prolonged campaigning.
 
 ### Seyet
 - entity_type: `deity`
+- definition: A god of winds invoked in accounts of the First Miracle of Seyet.
 
 ### Shorkin
 - entity_type: `ethnos`
+- definition: Northern mercenaries who fought alongside the Foernumkin in Sylas' early campaign.
 
 ### Silpir
 - entity_type: `person`
+- definition: Chief of the Sanarkin tribe who challenged Sylas' winter campaign decision.
 
 ### Srith
 - entity_type: `place`
+- definition: A Uskelpes city-state in the main trade circuit.
 
 ### Svartasthur
 - entity_type: `place`
+- definition: A river forming a boundary of the hill-tribe campaign region.
 
 ### Sylas
 - entity_type: `person`
+- definition: Son of Enka and Borlas, later Virvelsprins and Rekaz of Bergthur.
 
 ### Sylpin
 - entity_type: `place`
+- definition: A river marking eastern Rathic city-states and western Pelkin borders.
 
 ### Thuride
 - entity_type: `place`
+- definition: A Rathic city-state used as a strategic point in Sylas' campaigns.
 
 ### Tyvas Ynavjan
 - entity_type: `deity`
+- definition: An aspect of the Rathic sky god honored during the Feast of the Boundary.
 
 ### Umba
 - entity_type: `place`
+- definition: A northern Rathic city-state pressured into surrender during Sylas' northern campaign.
 
 ### Uncalyn
 - entity_type: `person`
+- definition: A legendary king credited with founding the Kelpic city-state on the Pyg.
 
 ### Uskelpes
 - entity_type: `institution`
+- definition: A league of five Kelpic city-states on the Osrosidhan plateau.
 
 ### Vanyalas
 - entity_type: `person`
+- definition: Twin sister of Sylas, offered in marriage to Danig of Markinse.
 
 ### Vidahjul
 - entity_type: `place`
+- definition: A northern city-state visited during Sylas' six-month campaign.
 
 ### Virvelsprins
 - entity_type: `title`
+- definition: An honorific meaning 'Prince of the Vortex' bestowed on Sylas after the First Miracle of Seyet.
 
 ### Weal
 - entity_type: `place`
+- definition: A Farkin city allied with Omagda and Umba against the Foernumkin.
 
 ### Welfalir
 - entity_type: `ethnos`
+- definition: A tribe granted control of southern border lands after Sylas' southern campaign.
 
 ### Wielsidhe
 - entity_type: `place`
+- definition: A Rathic town used as a base of operations in Sylas' campaigns.
 
 ### Yneva Ereyna
 - entity_type: `deity`
+- definition: An aspect of the star goddess worshiped in a Pelkin-influenced temple at Ocazca.
 
 ### Yneva Thurlaska
 - entity_type: `deity`
+- definition: An aspect of the star goddess tied to the fertility and safety of Bergthur's river.
