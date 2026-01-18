@@ -1,0 +1,35 @@
+id: e.person.danig
+kind: person
+label: Danig
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Danig
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a2
+    predicate: rel.related_to
+    object: e.person.vanyalas
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      title: Lord of Markinse
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).

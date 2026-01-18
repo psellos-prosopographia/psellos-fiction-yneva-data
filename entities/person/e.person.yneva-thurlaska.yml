@@ -1,25 +1,26 @@
-id: e.place.bergthur
-kind: place
-label: Bergthur
+id: e.person.yneva-thurlaska
+kind: person
+label: Yneva Thurlaska
 assertions:
   - id: a1
     predicate: rel.designated_as
     value:
-      text: Bergthur
+      text: Yneva Thurlaska
       language: und
       name_kind: primary
-    narrative_layer: L0.1
+    narrative_layer: L4.4
     provenance:
       kind: editorial
       editorial_synthesis:
         method: synthesis
-        notes: Assertion-first conversion from the L0.1 narrative outline.
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
   - id: a2
-    predicate: rel.designated_as
+    predicate: rel.characterized_as
     value:
-      text: Mother City
-      language: und
-      name_kind: epithet
+      deity_aspect_of: e.institution.planetarians
+      associated_with:
+        - river_fertility
+        - river_safety
     narrative_layer: L4.4
     provenance:
       kind: editorial

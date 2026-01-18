@@ -1,0 +1,63 @@
+id: e.person.borlas
+kind: person
+label: Borlas the Wide
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Borlas the Wide
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a2
+    predicate: rel.related_to
+    object: e.person.enka
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a3
+    predicate: rel.characterized_as
+    value:
+      background:
+        - widower_chief
+        - active_driyar_leader
+      demeanor:
+        - congenial
+        - formerly_raucous
+      personal_tragedy:
+        - lost_wife_and_children_to_illness_or_battle
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a4
+    predicate: rel.characterized_as
+    value:
+      battlefield_reputation: strong
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a5
+    predicate: rel.characterized_as
+    value:
+      survived_stroke_year: 720
+      required_daily_assistance: true
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).

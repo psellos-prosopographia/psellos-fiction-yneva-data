@@ -1,0 +1,297 @@
+id: e.person.sylas
+kind: person
+label: Sylas
+assertions:
+  - id: a1
+    predicate: rel.designated_as
+    value:
+      text: Sylas
+      language: und
+      name_kind: primary
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a2
+    predicate: rel.designated_as
+    value:
+      text: Virvelsprins
+      language: und
+      name_kind: epithet
+      gloss: Prince of the Vortex
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a3
+    predicate: rel.designated_as
+    value:
+      text: Rekaz of Bergthur
+      language: und
+      name_kind: title
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a4
+    predicate: rel.child_of
+    object: e.person.enka
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a5
+    predicate: rel.child_of
+    object: e.person.borlas
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a6
+    predicate: rel.related_to
+    object: e.person.himvalda
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a7
+    predicate: rel.characterized_as
+    value:
+      upbringing:
+        - campaigned_with_father
+        - trained_horsemanship
+        - trained_sword_and_spear
+      court_reputation:
+        - bonded_with_soldiers
+        - scolded_for_uncouth_demeanor
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a8
+    predicate: rel.characterized_as
+    value:
+      betrothal_arranged_by: e.person.enka
+      betrothed_to: e.person.himvalda
+      betrothal_context:
+        - himvalda_age_at_betrothal: 7
+        - nominal_fiancee_hostage_in_palace
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a9
+    predicate: rel.characterized_as
+    value:
+      personal_conduct:
+        - carousing
+        - gambling
+        - mistresses_in_conquered_territories
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a10
+    predicate: rel.characterized_as
+    value:
+      consulted_omen: e.institution.daughters-of-yneva
+      omen_warning: wrath_of_the_deep
+      source_reported_by: e.person.hamford-the-elder
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a11
+    predicate: rel.characterized_as
+    value:
+      campaigned_against: e.institution.foernumkin
+      army_composition:
+        infantry: 4500
+        cavalry: 2000
+        armaur_retinue: 100
+      battlefield_location: e.place.hvasparsthur
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a12
+    predicate: rel.characterized_as
+    value:
+      requested_reinforcements_from:
+        - e.place.feir
+        - e.place.omagda
+      offered_silver_for_reinforcements: true
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a13
+    predicate: rel.characterized_as
+    value:
+      hailed_virvelsprins_after: first_miracle_of_seyet
+      continued_campaigns_years: 2
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a14
+    predicate: rel.characterized_as
+    value:
+      sent_advisor: e.person.olkin
+      diplomatic_mission_to:
+        - e.place.markinse
+        - e.place.odoanca
+        - e.place.carpesidhe
+      offered_marriage_alliance:
+        bride: e.person.vanyalas
+        groom: e.person.danig
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a15
+    predicate: rel.characterized_as
+    value:
+      parent_of: e.person.gronauga
+      named_child: Gronauga
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a16
+    predicate: rel.characterized_as
+    value:
+      summoned_enka_to_palace: true
+      reason: raise_gronauga
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a17
+    predicate: rel.characterized_as
+    value:
+      campaign_year: 712
+      visited: e.place.ocazca
+      prayed_to: e.person.yneva-ereyna
+      requisitioned_tribute_from: e.institution.pelkin
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a18
+    predicate: rel.characterized_as
+    value:
+      promised_southern_lands_to:
+        - e.institution.ardavir
+        - e.institution.welfalir
+      frontier_protection_arrangement: true
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a19
+    predicate: rel.characterized_as
+    value:
+      compelled_planetarian_worship: true
+      installed_local_deities_as: e.institution.afgudslevin
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a20
+    predicate: rel.characterized_as
+    value:
+      handled_resistance_with:
+        - rewarded_voluntary_submission
+        - imposed_tribute_on_resistance
+        - maintained_order_without_revolts
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a21
+    predicate: rel.characterized_as
+    value:
+      received_anecdote_of_kneeling_chief: true
+      divine_legitimacy_after_seyet: true
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a22
+    predicate: rel.characterized_as
+    value:
+      sent_envoys_to_northern_tribes: true
+      letter_signed_as: "Sylas Virvelsprins, Rekaz of Bergthur"
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a23
+    predicate: rel.characterized_as
+    value:
+      established_garrison_in: e.place.omagda
+      offered_silver_to_inactive_driyar_chiefs: true
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
+  - id: a24
+    predicate: rel.characterized_as
+    value:
+      announced_inactive_driyar_offices:
+        - master_of_strategy
+        - master_of_banners
+        - master_of_supply
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Assertion-first conversion from the Magocratic narrative (chapters 2-5).
