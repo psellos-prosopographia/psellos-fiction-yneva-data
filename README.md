@@ -55,6 +55,7 @@ The mechanical authoring layer defines **how to write data** (deterministic file
 - [SPEC_ASSERTION_SHAPE.md](SPEC_ASSERTION_SHAPE.md) — definitive assertion object contract
 - [SPEC_PROVENANCE.md](SPEC_PROVENANCE.md) — encoding of attestation vs editorial synthesis
 - [SPEC_TIME_SCOPE.md](SPEC_TIME_SCOPE.md) — standardized temporal encoding
+- [SPEC_GEOGRAPHIC_RELATIONSHIPS.md](SPEC_GEOGRAPHIC_RELATIONSHIPS.md) — geographic references and relationship assertions
 - `build/build_contract.yml` — machine-readable validator contract
 - `templates/` — canonical starter templates
 

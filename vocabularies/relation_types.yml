@@ -112,6 +112,33 @@ terms:
     arity: object
     symmetric: false
 
+  - id: rel.contains
+    label: contains
+    arity: object
+    symmetric: false
+    inverse_of: rel.located_in
+
+  - id: rel.adjacent_to
+    label: adjacent to
+    arity: object
+    symmetric: true
+    notes: >
+      Spatial adjacency between places (shared border or immediate proximity).
+
+  - id: rel.borders
+    label: borders
+    arity: object
+    symmetric: true
+    notes: >
+      Shared boundary between two places; use when a border is explicitly asserted.
+
+  - id: rel.overlaps
+    label: overlaps
+    arity: object
+    symmetric: true
+    notes: >
+      Spatial overlap between two places; use when extents intersect.
+
   # Minimal core assertion operations referenced in README.md.
   - id: rel.attested_in_source
     label: attested in source
