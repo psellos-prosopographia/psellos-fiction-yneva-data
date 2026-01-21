@@ -29,18 +29,46 @@ terms:
     label: Old Romish
   - id: lang.romish
     label: Romish
+  - id: lang.boolian
+    label: Boolian
+  - id: lang.old-boolian
+    label: Old Boolian
+  - id: lang.former-boolian
+    label: Former Boolian
+  - id: lang.new-boolian
+    label: New Boolian
   - id: lang.ombrish
     label: Ombrish
   - id: lang.oscan
     label: Oscan
-  - id: lang.ynedric
-    label: Ynedric
-  - id: lang.goddish
-    label: Goddish
+  - id: lang.old-oscan
+    label: Old Oscan
+  - id: lang.former-oscan
+    label: Former Oscan
+  - id: lang.new-oscan
+    label: New Oscan
+  - id: lang.ynedriac
+    label: Ynedriac
+  - id: lang.plateau-goddish
+    label: Plateau Goddish
+  - id: lang.heartland-goddish
+    label: Heartland Goddish
   - id: lang.genlish
     label: Genlish
+  - id: lang.old-genlish
+    label: Old Genlish
+  - id: lang.former-genlish
+    label: Former Genlish
+  - id: lang.new-genlish
+    label: New Genlish
   - id: lang.normish
     label: Normish
+  - id: lang.old-normish
+    label: Old Normish
+  - id: lang.former-normish
+    label: Former Normish
+  - id: lang.new-normish
+    label: New Normish
   - id: lang.nyelfish
     label: Nyelfish
   - id: lang.proto-sakavish
@@ -49,6 +77,12 @@ terms:
     label: Sakavish
   - id: lang.rendish
     label: Rendish
+  - id: lang.old-rendish
+    label: Old Rendish
+  - id: lang.former-rendish
+    label: Former Rendish
+  - id: lang.new-rendish
+    label: New Rendish
   - id: lang.halffish
     label: Halffish
   - id: lang.lacurian

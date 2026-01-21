@@ -166,7 +166,7 @@ assertions:
   - id: a15
     predicate: rel.descends_from
     value:
-      child_language: lang.ynedric
+      child_language: lang.ynedriac
       parent_language: lang.ancient-ynevan
     narrative_layer: L4.4
     provenance:
@@ -177,8 +177,8 @@ assertions:
   - id: a16
     predicate: rel.descends_from
     value:
-      child_language: lang.goddish
-      parent_language: lang.ynedric
+      child_language: lang.plateau-goddish
+      parent_language: lang.ynedriac
     narrative_layer: L4.4
     provenance:
       kind: editorial
@@ -189,7 +189,7 @@ assertions:
     predicate: rel.descends_from
     value:
       child_language: lang.normish
-      parent_language: lang.goddish
+      parent_language: lang.plateau-goddish
     narrative_layer: L4.4
     provenance:
       kind: editorial
@@ -200,7 +200,18 @@ assertions:
     predicate: rel.descends_from
     value:
       child_language: lang.genlish
-      parent_language: lang.goddish
+      parent_language: lang.plateau-goddish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a18b
+    predicate: rel.descends_from
+    value:
+      child_language: lang.heartland-goddish
+      parent_language: lang.ynedriac
     narrative_layer: L4.4
     provenance:
       kind: editorial
@@ -273,6 +284,360 @@ assertions:
       editorial_synthesis:
         method: synthesis
         notes: Normalized from philological taxonomy notes.
+  - id: a24b
+    predicate: rel.descends_from
+    value:
+      child_language: lang.boolian
+      parent_language: lang.romish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24c
+    predicate: rel.descends_from
+    value:
+      child_language: lang.old-boolian
+      parent_language: lang.boolian
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24d
+    predicate: rel.descends_from
+    value:
+      child_language: lang.former-boolian
+      parent_language: lang.boolian
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24e
+    predicate: rel.descends_from
+    value:
+      child_language: lang.new-boolian
+      parent_language: lang.boolian
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24f
+    predicate: rel.descends_from
+    value:
+      child_language: lang.old-oscan
+      parent_language: lang.oscan
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24g
+    predicate: rel.descends_from
+    value:
+      child_language: lang.former-oscan
+      parent_language: lang.oscan
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24h
+    predicate: rel.descends_from
+    value:
+      child_language: lang.new-oscan
+      parent_language: lang.oscan
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24i
+    predicate: rel.descends_from
+    value:
+      child_language: lang.old-normish
+      parent_language: lang.normish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24j
+    predicate: rel.descends_from
+    value:
+      child_language: lang.former-normish
+      parent_language: lang.normish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24k
+    predicate: rel.descends_from
+    value:
+      child_language: lang.new-normish
+      parent_language: lang.normish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24l
+    predicate: rel.descends_from
+    value:
+      child_language: lang.old-genlish
+      parent_language: lang.genlish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24m
+    predicate: rel.descends_from
+    value:
+      child_language: lang.former-genlish
+      parent_language: lang.genlish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24n
+    predicate: rel.descends_from
+    value:
+      child_language: lang.new-genlish
+      parent_language: lang.genlish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24o
+    predicate: rel.descends_from
+    value:
+      child_language: lang.old-rendish
+      parent_language: lang.rendish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24p
+    predicate: rel.descends_from
+    value:
+      child_language: lang.former-rendish
+      parent_language: lang.rendish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24q
+    predicate: rel.descends_from
+    value:
+      child_language: lang.new-rendish
+      parent_language: lang.rendish
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+
+  # IIb. Diachronic stage classifications
+  - id: a24r
+    predicate: rel.language_stage
+    value:
+      language: lang.lobric
+      stage: cls.language-stage-new
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24s
+    predicate: rel.language_stage
+    value:
+      language: lang.old-boolian
+      stage: cls.language-stage-old
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24t
+    predicate: rel.language_stage
+    value:
+      language: lang.former-boolian
+      stage: cls.language-stage-former
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24u
+    predicate: rel.language_stage
+    value:
+      language: lang.new-boolian
+      stage: cls.language-stage-new
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24v
+    predicate: rel.language_stage
+    value:
+      language: lang.old-oscan
+      stage: cls.language-stage-old
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24w
+    predicate: rel.language_stage
+    value:
+      language: lang.former-oscan
+      stage: cls.language-stage-former
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24x
+    predicate: rel.language_stage
+    value:
+      language: lang.new-oscan
+      stage: cls.language-stage-new
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24y
+    predicate: rel.language_stage
+    value:
+      language: lang.old-normish
+      stage: cls.language-stage-old
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24z
+    predicate: rel.language_stage
+    value:
+      language: lang.former-normish
+      stage: cls.language-stage-former
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24aa
+    predicate: rel.language_stage
+    value:
+      language: lang.new-normish
+      stage: cls.language-stage-new
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24ab
+    predicate: rel.language_stage
+    value:
+      language: lang.old-genlish
+      stage: cls.language-stage-old
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24ac
+    predicate: rel.language_stage
+    value:
+      language: lang.former-genlish
+      stage: cls.language-stage-former
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24ad
+    predicate: rel.language_stage
+    value:
+      language: lang.new-genlish
+      stage: cls.language-stage-new
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24ae
+    predicate: rel.language_stage
+    value:
+      language: lang.old-rendish
+      stage: cls.language-stage-old
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24af
+    predicate: rel.language_stage
+    value:
+      language: lang.former-rendish
+      stage: cls.language-stage-former
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
+  - id: a24ag
+    predicate: rel.language_stage
+    value:
+      language: lang.new-rendish
+      stage: cls.language-stage-new
+    narrative_layer: L4.4
+    provenance:
+      kind: editorial
+      editorial_synthesis:
+        method: synthesis
+        notes: Normalized from philological taxonomy notes.
 
   # III. Dialect continuum / areal families (non-genealogical grouping)
   - id: a25
@@ -336,7 +701,7 @@ assertions:
     predicate: rel.derives_structural_base_from
     value:
       language: lang.genlish
-      source_language: lang.goddish
+      source_language: lang.plateau-goddish
     narrative_layer: L4.4
     provenance:
       kind: editorial
@@ -371,7 +736,7 @@ assertions:
     predicate: rel.derives_lexical_stratum_from
     value:
       language: lang.halffish
-      source_language: lang.goddish
+      source_language: lang.plateau-goddish
     narrative_layer: L4.4
     provenance:
       kind: editorial

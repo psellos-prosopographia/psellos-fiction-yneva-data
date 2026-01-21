@@ -18,3 +18,9 @@ terms:
     label: conquest assimilation
   - id: cls.elite-dominance
     label: elite dominance
+  - id: cls.language-stage-old
+    label: language stage (old)
+  - id: cls.language-stage-former
+    label: language stage (former)
+  - id: cls.language-stage-new
+    label: language stage (new)

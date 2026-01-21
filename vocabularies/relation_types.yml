@@ -57,6 +57,13 @@ terms:
       Describes the formation process for a language. Value mapping keys: language,
       process_type, mechanism.
 
+  - id: rel.language_stage
+    label: language stage
+    arity: value
+    notes: >
+      Declares diachronic stage classification for a language. Value mapping keys:
+      language, stage.
+
   - id: rel.group_type
     label: group type
     arity: value
