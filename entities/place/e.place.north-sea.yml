@@ -26,3 +26,64 @@ assertions:
       editorial_synthesis:
         method: synthesis
         notes: Assertion-first conversion from the yneva-world-model-main geographic region dataset.
+
+  -
+    id: "a3"
+    predicate: "rel.characterized_as"
+    value:
+      geometry:
+        reference_frame: "yneva_world_map_v1"
+        map_canvas_px:
+          - 700
+          - 700
+        type: "raster_label"
+        source: "colorcodes_labels.npy"
+        value: 30
+        bbox_px:
+          - 2
+          - 0
+          - 699
+          - 290
+    narrative_layer: "L0.1"
+    provenance:
+      kind: "editorial"
+      editorial_synthesis:
+        method: "synthesis"
+        notes: "Assertion-first conversion from the yneva-world-model-main geographic region dataset."
+  -
+    id: "a4"
+    predicate: "rel.characterized_as"
+    value:
+      geo:
+        summary: "A cold, shallow sea with extensive continental shelves. Seasonal ice can form in sheltered areas."
+        climate:
+          notes: "Strongly moderates adjacent climates by increasing humidity and cloud cover."
+          seasonality:
+            summer_dryness: 0.3
+            winter_wetness: 0.6
+        terrain:
+          elevation_m:
+            min: -800
+            max: 0
+          ruggedness: 0.1
+          landforms:
+            -
+              name: "shallow_shelf_sea"
+              weight: 0.7
+            -
+              name: "ice_prone_bays"
+              weight: 0.3
+        hydrology:
+          drainage: "coastal"
+          seasonality:
+            baseflow_index: 0.95
+            drying_risk_summer: 0.05
+            flood_risk_spring: 0.2
+            freeze_risk_winter: 0.6
+            notes: "Cold shelf sea with seasonal ice formation in sheltered waters."
+    narrative_layer: "L0.1"
+    provenance:
+      kind: "editorial"
+      editorial_synthesis:
+        method: "synthesis"
+        notes: "Assertion-first conversion from the yneva-world-model-main geographic region dataset."

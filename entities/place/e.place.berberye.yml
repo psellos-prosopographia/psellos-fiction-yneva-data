@@ -25,3 +25,64 @@ assertions:
       editorial_synthesis:
         method: synthesis
         notes: Assertion-first conversion from the yneva-world-model-main geographic region dataset.
+
+  -
+    id: "a3"
+    predicate: "rel.characterized_as"
+    value:
+      geometry:
+        reference_frame: "yneva_world_map_v1"
+        map_canvas_px:
+          - 700
+          - 700
+        type: "raster_label"
+        source: "colorcodes_labels.npy"
+        value: 35
+        bbox_px:
+          - 330
+          - 285
+          - 539
+          - 343
+    narrative_layer: "L0.1"
+    provenance:
+      kind: "editorial"
+      editorial_synthesis:
+        method: "synthesis"
+        notes: "Assertion-first conversion from the yneva-world-model-main geographic region dataset."
+  -
+    id: "a4"
+    predicate: "rel.characterized_as"
+    value:
+      geo:
+        summary: "A high, steep mountainous region marked by deep, narrow passes and abrupt slopes. Rapid elevation loss to the north creates dramatic relief."
+        climate:
+          notes: "Wind corridors between ranges generate persistent, powerful airflow."
+          seasonality:
+            summer_dryness: 0.4
+            winter_wetness: 0.6
+        terrain:
+          elevation_m:
+            min: 400
+            max: 3000
+          ruggedness: 0.85
+          landforms:
+            -
+              name: "steep_mountains"
+              weight: 0.7
+            -
+              name: "narrow_passes"
+              weight: 0.3
+        hydrology:
+          drainage: "exorheic"
+          seasonality:
+            baseflow_index: 0.5
+            drying_risk_summer: 0.3
+            flood_risk_spring: 0.6
+            freeze_risk_winter: 0.6
+            notes: "Steep catchments with rapid runoff and seasonal snowmelt."
+    narrative_layer: "L0.1"
+    provenance:
+      kind: "editorial"
+      editorial_synthesis:
+        method: "synthesis"
+        notes: "Assertion-first conversion from the yneva-world-model-main geographic region dataset."

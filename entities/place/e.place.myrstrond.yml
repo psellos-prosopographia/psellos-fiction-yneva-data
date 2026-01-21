@@ -25,3 +25,64 @@ assertions:
       editorial_synthesis:
         method: synthesis
         notes: Assertion-first conversion from the yneva-world-model-main geographic region dataset.
+
+  -
+    id: "a3"
+    predicate: "rel.characterized_as"
+    value:
+      geometry:
+        reference_frame: "yneva_world_map_v1"
+        map_canvas_px:
+          - 700
+          - 700
+        type: "raster_label"
+        source: "colorcodes_labels.npy"
+        value: 33
+        bbox_px:
+          - 548
+          - 150
+          - 597
+          - 223
+    narrative_layer: "L0.1"
+    provenance:
+      kind: "editorial"
+      editorial_synthesis:
+        method: "synthesis"
+        notes: "Assertion-first conversion from the yneva-world-model-main geographic region dataset."
+  -
+    id: "a4"
+    predicate: "rel.characterized_as"
+    value:
+      geo:
+        summary: "Cold, low-lying wetlands and swamps with poor drainage. The landscape is flat, waterlogged, and biologically rich."
+        climate:
+          notes: "Seasonal flooding is common; solid ground is limited to raised areas."
+          seasonality:
+            summer_dryness: 0.3
+            winter_wetness: 0.6
+        terrain:
+          elevation_m:
+            min: 0
+            max: 150
+          ruggedness: 0.15
+          landforms:
+            -
+              name: "wetlands"
+              weight: 0.7
+            -
+              name: "raised_islands"
+              weight: 0.3
+        hydrology:
+          drainage: "cryptorheic"
+          seasonality:
+            baseflow_index: 0.5
+            drying_risk_summer: 0.3
+            flood_risk_spring: 0.7
+            freeze_risk_winter: 0.6
+            notes: "Poor drainage and saturated soils sustain persistent wetlands."
+    narrative_layer: "L0.1"
+    provenance:
+      kind: "editorial"
+      editorial_synthesis:
+        method: "synthesis"
+        notes: "Assertion-first conversion from the yneva-world-model-main geographic region dataset."
